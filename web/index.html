@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173d35">
+  <meta name="description" content="Sfida l'intelligenza artificiale di RETO 07 a domino doppio-sei. Cinque livelli, nessuna installazione.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>RETO 07 · Gioca a domino contro l'AI</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Reto 07, pagina del gioco"><span class="brand-mark" aria-hidden="true">⚂</span><span>RETO <strong>07</strong><small>IL LABORATORIO DEL DOMINO</small></span></a>
+    <nav aria-label="Navigazione"><a href="https://github.com/adster2/Reto07-GameEngine/blob/feat/domino-engine-simulator/GUIDA_GITHUB.md" target="_blank" rel="noopener">Guida al progetto ↗</a><a href="https://github.com/adster2/Reto07-GameEngine" target="_blank" rel="noopener">GitHub ↗</a></nav>
+  </header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">TU, SETTE TESSERE E UN'INTELLIGENZA ARTIFICIALE</p><h1>La prossima mossa è tua.</h1><p>Una vera partita di domino. Sfida la nostra CPU, scegli il livello e trova la tua strategia.</p></div><button class="button primary" id="new-game" disabled>+ Nuova partita</button></section>
+    <div id="error" class="notice error" role="alert" hidden></div>
+    <section id="loading" class="loading-card" aria-live="polite"><span class="spinner" aria-hidden="true"></span><div><h2>Prepariamo il tavolo</h2><p id="loading-text">Caricamento del gioco. Non occorre installare nulla.</p></div><button id="retry" class="button" hidden>Riprova</button></section>
+    <section id="game" hidden aria-label="Partita di domino">
+      <div class="game-toolbar"><div class="turn-pill" id="turn" role="status" aria-live="polite">Il tuo turno</div><label class="level-control">CPU <select id="level" aria-label="Livello della CPU"><option value="1">Livello 1</option><option value="2">Livello 2</option><option value="3" selected>Livello 3</option><option value="4">Livello 4</option><option value="5">Livello 5</option></select></label><button id="undo" class="text-button" disabled>↶ Annulla ultima</button></div>
+      <div class="table" id="table">
+        <div class="cpu-zone"><div class="player-label"><span class="avatar">CPU</span><div><strong>Il tuo avversario</strong><span id="cpu-count">7 tessere</span></div></div><div id="cpu-hand" class="cpu-hand" aria-label="Tessere coperte della CPU"></div></div>
+        <div class="ends"><span>ESTREMO SINISTRO <strong id="left-end">—</strong></span><span>ESTREMO DESTRO <strong id="right-end">—</strong></span></div>
+        <div id="chain" class="chain" aria-label="Catena delle tessere sul tavolo"><p class="empty-board">Il tavolo è pronto.<br><span>Chi inizia può giocare qualsiasi tessera.</span></p></div>
+        <div class="table-footer"><span>DOPPIO SEI · NESSUNA PESCA</span><span id="ply-count">0 mosse confermate</span></div>
+      </div>
+      <div id="result" class="result-card" role="status" hidden><p class="eyebrow">MANCHE CONCLUSA</p><h2 id="result-title"></h2><p id="result-text"></p><button class="button primary" id="play-again">Giochiamo ancora</button></div>
+      <section class="proposal-card" id="proposal" hidden aria-label="Conferma della mossa"><div id="proposal-tile"></div><div class="proposal-copy"><p class="eyebrow" id="proposal-actor"></p><h2 id="proposal-title"></h2><p id="proposal-detail"></p></div><div class="proposal-actions"><button id="confirm" class="button primary">Conferma mossa</button><button id="discard" class="button subtle">Scarta</button></div></section>
+      <section class="hand-card"><div class="section-heading"><div><h2>La tua mano</h2><p id="hand-hint">Scegli una tessera per vedere dove puoi giocarla.</p></div><span id="your-points" class="points"></span></div><div id="hand" class="hand" aria-label="Le tue tessere"></div><div class="hand-actions"><button id="pass" class="button" disabled>Passa il turno</button><button id="cpu-play" class="button" hidden>Fai muovere la CPU</button><label class="advice-toggle"><input type="checkbox" id="show-advice"> Mostra i consigli dell'AI</label></div></section>
+      <section id="advice" class="advice-card" hidden><div class="section-heading"><h2>Uno sguardo alla strategia</h2><span class="muted">Punteggi di utilità, non probabilità di vittoria</span></div><div id="ranking"></div></section>
+      <div class="lower-grid"><details class="info-card" open><summary>Come si gioca?</summary><ol><li>Clicca una tua tessera disponibile e scegli una posa.</li><li>Premi <strong>Conferma mossa</strong> per metterla sul tavolo.</li><li>La CPU pensa e propone la sua tessera. Conferma anche quella.</li><li>Si passa solo se nessuna tessera è giocabile. Non si pesca.</li><li>Vince chi finisce le tessere. Due passaggi bloccano la partita: vince chi ha meno punti in mano.</li></ol></details><details class="info-card"><summary>Cronologia della partita</summary><ol id="history" class="history"></ol></details><details class="info-card"><summary>Salva o riprendi una partita</summary><p>Puoi salvare una partita sul tuo dispositivo e riprenderla in seguito. Il file include i dati dell'arbitro, comprese le mani.</p><div class="inline-actions"><button id="save-game" class="button">Salva partita</button><button id="load-game" class="button">Riprendi da file</button><input id="load-file" type="file" accept="application/json,.json" hidden></div><p class="muted">Se ricarichi la pagina senza salvare, la partita in corso viene sostituita.</p></details><details class="info-card"><summary>Cosa ha calcolato l'AI?</summary><p>L'AI vede soltanto la propria mano, il tavolo e le mosse già osservate. Non conosce le tue tessere.</p><p id="diagnostics">Il calcolo comparirà dopo una decisione.</p></details></div>
+    </section>
+  </main>
+  <footer><span>RETO 07 · Un solo motore, dalla simulazione alla futura telecamera.</span><span>Nessun account. Nessuna installazione.</span></footer>
+  <dialog id="placement-dialog"><form method="dialog"><button class="dialog-close" aria-label="Chiudi">×</button></form><p class="eyebrow">SCEGLI LA POSA</p><h2>Dove la vuoi giocare?</h2><p>I lati e gli orientamenti qui sotto sono tutti legali.</p><div id="placements"></div></dialog>
+  <dialog id="new-dialog"><form id="new-form"><button type="button" class="dialog-close" id="close-new" aria-label="Chiudi">×</button><p class="eyebrow">UN NUOVO TAVOLO</p><h2>Pronto a sfidare la CPU?</h2><p>Sette tessere a testa e primo giocatore sorteggiato.</p><label class="field">Livello della CPU<select id="new-level"><option value="1">1 · Profondità 1</option><option value="2">2 · Profondità 2</option><option value="3" selected>3 · Profondità 3</option><option value="4">4 · Profondità 4</option><option value="5">5 · Profondità 5</option></select></label><details><summary>Partita riproducibile (facoltativo)</summary><label class="field">Numero della partita<input id="seed" type="number" min="0" max="9007199254740991" step="1" placeholder="Lascia vuoto per un nuovo sorteggio"></label></details><button class="button primary full-width" type="submit">Distribuisci le tessere</button></form></dialog>
+  <noscript>Per giocare occorre abilitare JavaScript nel browser.</noscript>
+</body>
+</html>
