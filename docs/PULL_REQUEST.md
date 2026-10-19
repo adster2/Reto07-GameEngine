@@ -27,3 +27,14 @@ pubblico reale. La GUI e il packaging sono verificati su Linux. Le approssimazio
 della ricerca e i gate NOT_RUN sono documentati in PROJECT_STATUS.md e nei report.
 
 Pull request aperta: https://github.com/adster2/Reto07-GameEngine/pull/1
+
+## Aggiornamento browser
+
+Aggiunta la versione browser, con gli stessi moduli Python eseguiti in un worker
+Pyodide, interfaccia responsive, CPU fair ai livelli 1–5, conferma, consigli,
+undo e save/load. Aggiunta GUIDA_GITHUB.md per il proprietario alle prime armi.
+48 test passati, sei partite Chromium e 1.000 partite del protocollo JSON concluse.
+Il sito generato è nel branch gh-pages. L'attivazione Pages resta da confermare:
+API e dominio pubblico sono bloccati con 403 dal proxy della macchina corrente.
+Istruzione per il proprietario: Settings → Pages → Deploy from a branch → gh-pages
+→ / (root) → Save; il link si usa dopo la comparsa di Visit site.

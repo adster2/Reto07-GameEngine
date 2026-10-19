@@ -1,0 +1,16 @@
+{
+  "games": 1000,
+  "seed_start": 40000,
+  "seed_end": 40999,
+  "levels": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "plies": 12966,
+  "rule_violations": 0,
+  "replays_verified": 1000,
+  "wall_seconds": 88.09316367300016
+}

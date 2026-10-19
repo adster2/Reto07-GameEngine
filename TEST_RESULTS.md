@@ -1,5 +1,8 @@
 # Risultati eseguiti — 19 ottobre 2026
 
+Questo report descrive la prima consegna del motore e del desktop. Per i 48 test
+attuali, la versione browser e lo stato della pubblicazione vedere [WEB_TEST_RESULTS.md](WEB_TEST_RESULTS.md).
+
 Validazione finale del codice: `61a4b0efedc958489eaf082acde84e57f1c573eb`. Working directory
 `/workspace/Reto07-GameEngine`. I documenti e i dati sono aggiunti nel commit
 successivo; non cambiano il codice validato. Comandi, exit status, tempi e SHA-256

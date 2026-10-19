@@ -5,6 +5,27 @@ fair a cinque profondità. Si può giocare personalmente contro la CPU alimentat
 dallo stesso StrategyEngine (non un bot casuale o greedy). Nessuna dipendenza da OpenCV, telecamera, rete o file del
 PC. Specifica originale: [CODEX_GAME_ENGINE_SPEC.md](CODEX_GAME_ENGINE_SPEC.md).
 
+## Giocare dal browser
+
+La versione browser è realizzata e collaudata: usa lo stesso motore Python e la
+stessa CPU ai livelli 1–5, senza installazioni sul dispositivo del giocatore.
+Il sito è già preparato nel branch `gh-pages`; **l'attivazione di GitHub Pages
+non è ancora confermata**, perché l'accesso API da questa macchina restituisce 403.
+
+Per attivarlo: [Settings → Pages](https://github.com/adster2/Reto07-GameEngine/settings/pages)
+→ **Deploy from a branch** → **gh-pages** → **/ (root)** → **Save**.
+Quando compare **Visit site**, aprirlo per giocare. L'indirizzo previsto è
+`https://adster2.github.io/Reto07-GameEngine/`; non viene presentato come già verificato.
+
+Nella pagina clicca una tessera disponibile, scegli la posa e premi **Conferma**.
+Conferma anche la proposta della CPU. I consigli per te sono facoltativi e
+inizialmente nascosti. Il primo caricamento richiede la connessione e qualche
+secondo per il motore Python; il gioco non richiede account o Python installato.
+
+**Prima volta su GitHub?** Leggi [la guida semplice al nostro progetto](GUIDA_GITHUB.md).
+Prove della nuova interfaccia: [WEB_TEST_RESULTS.md](WEB_TEST_RESULTS.md).
+Procedure tecniche: [WEB_DEPLOYMENT.md](WEB_DEPLOYMENT.md).
+
 ## Avvio immediato
 
 Richiede **Python 3.10+ con Tkinter** per la GUI (incluso normalmente nel Python
