@@ -1,0 +1,13 @@
+{
+  "accepted_source_commit": "53b349bc82db48d44deeeed7df5d2c760755b787",
+  "accepted_tag": "consegna-v1.0",
+  "accepted_branch": "release/consegna-v1",
+  "accepted_pages_commit": "0192cb9654acfa381835f70c457e35dadffeb088",
+  "research_branch": "experiment/strategy-lab",
+  "primary_algorithm": "SO-ISMCTS",
+  "comparison_algorithm": "sampled-hand alpha-beta minimax",
+  "publish_research_to_existing_site": false,
+  "runtime_dependencies": [],
+  "development_seeds": [70000, 70019],
+  "holdout_seeds": [80000, 80083]
+}
