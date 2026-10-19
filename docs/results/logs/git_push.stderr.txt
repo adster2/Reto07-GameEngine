@@ -1,0 +1,6 @@
+remote: 
+remote: Create a pull request for 'feat/domino-engine-simulator' on GitHub by visiting:        
+remote:      https://github.com/adster2/Reto07-GameEngine/pull/new/feat/domino-engine-simulator        
+remote: 
+To https://github.com/adster2/Reto07-GameEngine.git
+ * [new branch]      feat/domino-engine-simulator -> feat/domino-engine-simulator

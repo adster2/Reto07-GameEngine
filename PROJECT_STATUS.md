@@ -65,10 +65,14 @@ alla lista personalizzata di rete, preservando i preset esistenti. Lo script è
 stato eseguito e ripetuto nella macchina corrente; il salvataggio non pubblica
 la configurazione né prova il ripristino di una nuova macchina.
 
-L'API GitHub è bloccata dal proxy con `CONNECT tunnel failed, response 403`.
-La lettura Git e il controllo di push funzionano con l'autenticazione esistente;
-non è stata richiesta una nuova chiave. Per rendere possibile l'apertura della
-pull request, rivedere e salvare le modifiche nelle impostazioni dell'ambiente,
-quindi **pubblicare l'ambiente** come richiesto dal salvataggio della bozza.
-Lo stato finale del push e del tentativo PR è registrato nel report di consegna
-`docs/PULL_REQUEST.md` e nel log `docs/results/GITHUB_DELIVERY.json`.
+Push completato sul branch `feat/domino-engine-simulator` e pull request aperta:
+[PR #1](https://github.com/adster2/Reto07-GameEngine/pull/1), verso `main`.
+L'API aveva inizialmente restituito 403; il tentativo finale è riuscito con
+l'autenticazione già presente, senza richiedere altre chiavi. Non c'è un blocco
+GitHub residuo. Comando e risposta effettivi sono in
+`docs/results/GITHUB_DELIVERY.json` e nei log associati.
+
+La configurazione cloud rimane una bozza salvata: rivedere e salvare le modifiche
+nelle impostazioni, quindi **pubblicare l'ambiente** per renderla riutilizzabile
+secondo il flusso del prodotto. Non viene dichiarata una pubblicazione né un
+ripristino in un nuovo task: questi passaggi non sono stati eseguiti dall'agente.

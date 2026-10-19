@@ -25,3 +25,5 @@ comandi e commit del codice validato inclusi in docs/results/.
 Da verificare sul PC: launcher e resa Windows; integrazione fisica OpenCV e tracker
 pubblico reale. La GUI e il packaging sono verificati su Linux. Le approssimazioni
 della ricerca e i gate NOT_RUN sono documentati in PROJECT_STATUS.md e nei report.
+
+Pull request aperta: https://github.com/adster2/Reto07-GameEngine/pull/1

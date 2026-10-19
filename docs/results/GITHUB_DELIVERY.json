@@ -1,0 +1,43 @@
+{
+  "repository": "adster2/Reto07-GameEngine",
+  "branch": "feat/domino-engine-simulator",
+  "pushed_commit": "6d08c8c26d74667bb56dcabec4826d444daf6c12",
+  "checks": [
+    {
+      "name": "git_push",
+      "command": [
+        "git",
+        "push",
+        "-u",
+        "origin",
+        "feat/domino-engine-simulator"
+      ],
+      "exit_code": 0,
+      "stdout": "logs/git_push.stdout.txt",
+      "stderr": "logs/git_push.stderr.txt"
+    },
+    {
+      "name": "pull_request",
+      "command": [
+        "gh",
+        "pr",
+        "create",
+        "--repo",
+        "adster2/Reto07-GameEngine",
+        "--base",
+        "main",
+        "--head",
+        "feat/domino-engine-simulator",
+        "--title",
+        "Implement playable domino game with fair five-level AI and validated simulator",
+        "--body-file",
+        "docs/PULL_REQUEST.md"
+      ],
+      "exit_code": 0,
+      "stdout": "logs/pull_request.stdout.txt",
+      "stderr": "logs/pull_request.stderr.txt"
+    }
+  ],
+  "status": "created",
+  "pull_request_url": "https://github.com/adster2/Reto07-GameEngine/pull/1"
+}
