@@ -1,0 +1,1 @@
+{"mode": "headless-controller", "seed": 42, "level": 5, "events": 11, "terminal": true, "winner": "OPPONENT", "cpu_policy": "ai5", "cpu_decisions": 6}

@@ -1,0 +1,1 @@
+{"events": 14, "terminal": true, "winner": "ASSISTED", "reason": "empty_hand"}

@@ -1,0 +1,1 @@
+{"mode": "tk-gui", "complete_game": true, "events": 13, "error": null, "cpu_policy": "ai3", "cpu_decisions": 7}

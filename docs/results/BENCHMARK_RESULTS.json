@@ -1,0 +1,24 @@
+{
+  "machine": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "processor": "AMD EPYC 9V74 80-Core Processor",
+    "available_cpus": 5
+  },
+  "search_config": {
+    "level": 5,
+    "samples": 8,
+    "max_nodes": 6000,
+    "time_limit_ms": 1500,
+    "seed": 20261019
+  },
+  "positions": 150,
+  "seed_start": 30000,
+  "p95_ms": 185.998416999837,
+  "max_ms": 257.09145699988767,
+  "mean_ms": 55.85740180664743,
+  "within_5s_rate": 1.0,
+  "latency_gate_pass": true,
+  "depth5_completed": 150,
+  "budget_limits": 0
+}

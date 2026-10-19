@@ -1,0 +1,99 @@
+{
+  "code_commit": "61a4b0efedc958489eaf082acde84e57f1c573eb",
+  "wheel": "reto07_domino_engine-0.1.0-py3-none-any.whl",
+  "wheel_sha256": "7c8e52c433a0d4569abce9030ac8eabb3532d0d3e5a2b2a66505fd29b3c6413b",
+  "build_command": [
+    ".venv/bin/python",
+    "-m",
+    "pip",
+    "wheel",
+    "--no-deps",
+    "--no-cache-dir",
+    "--disable-pip-version-check",
+    ".",
+    "--wheel-dir",
+    "local_runs/dist"
+  ],
+  "build_exit_code": 0,
+  "checks": [
+    {
+      "name": "wheel_install",
+      "command": [
+        "/tmp/reto07-wheel-test/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-index",
+        "--no-deps",
+        "--no-cache-dir",
+        "--disable-pip-version-check",
+        "--force-reinstall",
+        "/workspace/Reto07-GameEngine/local_runs/dist/reto07_domino_engine-0.1.0-py3-none-any.whl"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 0,
+      "wall_seconds": 0.3436946229999194,
+      "stdout": "logs/wheel_install.stdout.txt",
+      "stderr": "logs/wheel_install.stderr.txt"
+    },
+    {
+      "name": "wheel_origin",
+      "command": [
+        "/tmp/reto07-wheel-test/bin/python",
+        "-c",
+        "import domino_engine; print(domino_engine.__file__); assert domino_engine.__file__.startswith(\"/tmp/reto07-wheel-test/\")"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 0,
+      "wall_seconds": 0.036920911000152046,
+      "stdout": "logs/wheel_origin.stdout.txt",
+      "stderr": "logs/wheel_origin.stderr.txt"
+    },
+    {
+      "name": "wheel_cli",
+      "command": [
+        "/tmp/reto07-wheel-test/bin/reto07",
+        "play",
+        "--seed",
+        "42",
+        "--assisted",
+        "ai5"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 0,
+      "wall_seconds": 0.20030834899989713,
+      "stdout": "logs/wheel_cli.stdout.txt",
+      "stderr": "logs/wheel_cli.stderr.txt"
+    },
+    {
+      "name": "wheel_headless",
+      "command": [
+        "/tmp/reto07-wheel-test/bin/reto07-gui",
+        "--headless-smoke",
+        "--level",
+        "5"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 0,
+      "wall_seconds": 0.5073770609999428,
+      "stdout": "logs/wheel_headless.stdout.txt",
+      "stderr": "logs/wheel_headless.stderr.txt"
+    },
+    {
+      "name": "wheel_tk",
+      "command": [
+        "/tmp/reto07-wheel-test/bin/reto07-gui",
+        "--smoke",
+        "--level",
+        "5",
+        "--seed",
+        "42"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 0,
+      "wall_seconds": 1.8540418369998406,
+      "stdout": "logs/wheel_tk.stdout.txt",
+      "stderr": "logs/wheel_tk.stderr.txt"
+    }
+  ]
+}

@@ -105,6 +105,8 @@ Il torneo esegue **4.000 partite**: 5 livelli × 2 bot × 100 distribuzioni ×
 stesse mani scambiando i bot, e si provano entrambi i primi giocatori.
 Esporta risultati per partita, diagnostica per decisione, riepilogo con intervalli
 approssimati al 95% raggruppati per deal e transcript completi JSONL compressi.
+I transcript possono essere verificati senza rieseguire la ricerca con
+`python -m domino_engine audit local_runs/evaluation/TOURNAMENT_EVENTS.jsonl.gz`.
 Un gruppo è salvato prima di iniziare il successivo, così un'interruzione non
 cancella i risultati già conclusi. Una violazione interrompe il comando con errore,
 senza registrare falsamente la partita come completata.
@@ -122,6 +124,7 @@ Per verificare realmente Tk con un display Linux disponibile:
 python virtual_game.py --smoke --level 5 --seed 42
 ```
 
+Il display virtuale realmente usato è documentato in [docs/HEADLESS_TESTING.md](docs/HEADLESS_TESTING.md).
 `--headless-smoke` verifica il controller asincrono senza creare finestre;
 `--smoke` usa Tk e aziona i pulsanti per un'intera partita. Non sostituisce il
 collaudo visuale e del launcher sul PC Windows.
