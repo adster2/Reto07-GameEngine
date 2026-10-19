@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-10-19T19:38:17.632541+02:00",
+  "baseline": "53b349bc82db48d44deeeed7df5d2c760755b787",
+  "original_files_checked": 133,
+  "changed_original_files": [],
+  "remote_refs": [
+    "53b349bc82db48d44deeeed7df5d2c760755b787\trefs/heads/feat/domino-engine-simulator",
+    "0192cb9654acfa381835f70c457e35dadffeb088\trefs/heads/gh-pages",
+    "53b349bc82db48d44deeeed7df5d2c760755b787\trefs/heads/release/consegna-v1",
+    "53b349bc82db48d44deeeed7df5d2c760755b787\trefs/tags/consegna-v1.0^{}"
+  ]
+}

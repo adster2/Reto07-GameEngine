@@ -1,0 +1,566 @@
+{
+  "moves": [
+    {
+      "move": {
+        "tile": [
+          1,
+          3
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          1,
+          3
+        ]
+      },
+      "score": 32.0,
+      "heuristic_score": 45.5656346749226,
+      "explanation": "Scarica 4 punti; mobilit\u00e0 4; accesso a 6 tessere; ponti persi 0; P(passo avversario)=0.015 nel modello uniforme. ISMCTS: 32 simulazioni complete, punti medi simulati 0.734; score = visite, non probabilit\u00e0 di vittoria."
+    },
+    {
+      "move": {
+        "tile": [
+          1,
+          3
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          3,
+          1
+        ]
+      },
+      "score": 30.0,
+      "heuristic_score": 45.5656346749226,
+      "explanation": "Scarica 4 punti; mobilit\u00e0 4; accesso a 6 tessere; ponti persi 0; P(passo avversario)=0.015 nel modello uniforme. ISMCTS: 30 simulazioni complete, punti medi simulati 0.750; score = visite, non probabilit\u00e0 di vittoria."
+    },
+    {
+      "move": {
+        "tile": [
+          3,
+          4
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          4,
+          3
+        ]
+      },
+      "score": 24.0,
+      "heuristic_score": 49.1656346749226,
+      "explanation": "Scarica 7 punti; mobilit\u00e0 4; accesso a 6 tessere; ponti persi 0; P(passo avversario)=0.015 nel modello uniforme. ISMCTS: 24 simulazioni complete, punti medi simulati 0.688; score = visite, non probabilit\u00e0 di vittoria."
+    },
+    {
+      "move": {
+        "tile": [
+          4,
+          6
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          4,
+          6
+        ]
+      },
+      "score": 24.0,
+      "heuristic_score": 46.62260061919505,
+      "explanation": "Scarica 10 punti; mobilit\u00e0 3; accesso a 6 tessere; ponti persi 0; P(passo avversario)=0.007 nel modello uniforme. ISMCTS: 24 simulazioni complete, punti medi simulati 0.667; score = visite, non probabilit\u00e0 di vittoria."
+    },
+    {
+      "move": {
+        "tile": [
+          4,
+          6
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          6,
+          4
+        ]
+      },
+      "score": 21.0,
+      "heuristic_score": 46.62260061919505,
+      "explanation": "Scarica 10 punti; mobilit\u00e0 3; accesso a 6 tessere; ponti persi 0; P(passo avversario)=0.007 nel modello uniforme. ISMCTS: 21 simulazioni complete, punti medi simulati 0.619; score = visite, non probabilit\u00e0 di vittoria."
+    },
+    {
+      "move": {
+        "tile": [
+          3,
+          4
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          3,
+          4
+        ]
+      },
+      "score": 18.0,
+      "heuristic_score": 49.1656346749226,
+      "explanation": "Scarica 7 punti; mobilit\u00e0 4; accesso a 6 tessere; ponti persi 0; P(passo avversario)=0.015 nel modello uniforme. ISMCTS: 18 simulazioni complete, punti medi simulati 0.611; score = visite, non probabilit\u00e0 di vittoria."
+    },
+    {
+      "move": {
+        "tile": [
+          2,
+          4
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          4,
+          2
+        ]
+      },
+      "score": 17.0,
+      "heuristic_score": 41.82260061919505,
+      "explanation": "Scarica 6 punti; mobilit\u00e0 3; accesso a 6 tessere; ponti persi 0; P(passo avversario)=0.007 nel modello uniforme. ISMCTS: 17 simulazioni complete, punti medi simulati 0.588; score = visite, non probabilit\u00e0 di vittoria."
+    },
+    {
+      "move": {
+        "tile": [
+          2,
+          3
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          3,
+          2
+        ]
+      },
+      "score": 17.0,
+      "heuristic_score": 40.62260061919505,
+      "explanation": "Scarica 5 punti; mobilit\u00e0 3; accesso a 6 tessere; ponti persi 0; P(passo avversario)=0.007 nel modello uniforme. ISMCTS: 17 simulazioni complete, punti medi simulati 0.588; score = visite, non probabilit\u00e0 di vittoria."
+    },
+    {
+      "move": {
+        "tile": [
+          2,
+          3
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          2,
+          3
+        ]
+      },
+      "score": 14.0,
+      "heuristic_score": 40.62260061919505,
+      "explanation": "Scarica 5 punti; mobilit\u00e0 3; accesso a 6 tessere; ponti persi 0; P(passo avversario)=0.007 nel modello uniforme. ISMCTS: 14 simulazioni complete, punti medi simulati 0.536; score = visite, non probabilit\u00e0 di vittoria."
+    },
+    {
+      "move": {
+        "tile": [
+          1,
+          6
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          6,
+          1
+        ]
+      },
+      "score": 13.0,
+      "heuristic_score": 43.022600619195046,
+      "explanation": "Scarica 7 punti; mobilit\u00e0 3; accesso a 6 tessere; ponti persi 0; P(passo avversario)=0.007 nel modello uniforme. ISMCTS: 13 simulazioni complete, punti medi simulati 0.500; score = visite, non probabilit\u00e0 di vittoria."
+    },
+    {
+      "move": {
+        "tile": [
+          1,
+          5
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          1,
+          5
+        ]
+      },
+      "score": 13.0,
+      "heuristic_score": 35.00108359133127,
+      "explanation": "Scarica 6 punti; mobilit\u00e0 2; accesso a 6 tessere; ponti persi 0; P(passo avversario)=0.003 nel modello uniforme. ISMCTS: 13 simulazioni complete, punti medi simulati 0.500; score = visite, non probabilit\u00e0 di vittoria."
+    },
+    {
+      "move": {
+        "tile": [
+          1,
+          5
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          5,
+          1
+        ]
+      },
+      "score": 12.0,
+      "heuristic_score": 35.00108359133127,
+      "explanation": "Scarica 6 punti; mobilit\u00e0 2; accesso a 6 tessere; ponti persi 0; P(passo avversario)=0.003 nel modello uniforme. ISMCTS: 12 simulazioni complete, punti medi simulati 0.458; score = visite, non probabilit\u00e0 di vittoria."
+    },
+    {
+      "move": {
+        "tile": [
+          1,
+          6
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          1,
+          6
+        ]
+      },
+      "score": 11.0,
+      "heuristic_score": 43.022600619195046,
+      "explanation": "Scarica 7 punti; mobilit\u00e0 3; accesso a 6 tessere; ponti persi 0; P(passo avversario)=0.007 nel modello uniforme. ISMCTS: 11 simulazioni complete, punti medi simulati 0.455; score = visite, non probabilit\u00e0 di vittoria."
+    },
+    {
+      "move": {
+        "tile": [
+          2,
+          4
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          2,
+          4
+        ]
+      },
+      "score": 10.0,
+      "heuristic_score": 41.82260061919505,
+      "explanation": "Scarica 6 punti; mobilit\u00e0 3; accesso a 6 tessere; ponti persi 0; P(passo avversario)=0.007 nel modello uniforme. ISMCTS: 10 simulazioni complete, punti medi simulati 0.400; score = visite, non probabilit\u00e0 di vittoria."
+    }
+  ],
+  "diagnostics": {
+    "requested_depth": 44,
+    "completed_depth": 44,
+    "deepest_visited": 19,
+    "nodes": 3340,
+    "samples": 111,
+    "elapsed_ms": 912.4217319986201,
+    "budget_exhausted": false,
+    "limit": null,
+    "possible_hands": 116280,
+    "exact_belief": false,
+    "tree_depth": 3,
+    "iterations_requested": 256,
+    "iterations_completed": 256,
+    "root_visits": [
+      [
+        "[1|3] RIGHT [1|3]",
+        32
+      ],
+      [
+        "[1|3] RIGHT [3|1]",
+        30
+      ],
+      [
+        "[1|5] RIGHT [1|5]",
+        13
+      ],
+      [
+        "[1|5] RIGHT [5|1]",
+        12
+      ],
+      [
+        "[1|6] RIGHT [1|6]",
+        11
+      ],
+      [
+        "[1|6] RIGHT [6|1]",
+        13
+      ],
+      [
+        "[2|3] RIGHT [2|3]",
+        14
+      ],
+      [
+        "[2|3] RIGHT [3|2]",
+        17
+      ],
+      [
+        "[2|4] RIGHT [2|4]",
+        10
+      ],
+      [
+        "[2|4] RIGHT [4|2]",
+        17
+      ],
+      [
+        "[3|4] RIGHT [3|4]",
+        18
+      ],
+      [
+        "[3|4] RIGHT [4|3]",
+        24
+      ],
+      [
+        "[4|6] RIGHT [4|6]",
+        24
+      ],
+      [
+        "[4|6] RIGHT [6|4]",
+        21
+      ]
+    ],
+    "cutoffs": 0,
+    "cache_hits": 0
+  },
+  "belief": {
+    "model": "uniform-conditioned-on-public-tiles-and-forced-passes",
+    "unseen_count": 21,
+    "opponent_count": 7,
+    "expected_excluded_count": 14,
+    "candidate_count": 21,
+    "possible_hands": 116280,
+    "forbidden_values": [],
+    "tiles": [
+      {
+        "tile": [
+          0,
+          0
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          0,
+          1
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          0,
+          2
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          0,
+          3
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          0,
+          4
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          0,
+          5
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          0,
+          6
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          1,
+          1
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          1,
+          2
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          1,
+          3
+        ],
+        "location": "own",
+        "opponent_probability": 0.0,
+        "excluded_probability": 0.0
+      },
+      {
+        "tile": [
+          1,
+          4
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          1,
+          5
+        ],
+        "location": "own",
+        "opponent_probability": 0.0,
+        "excluded_probability": 0.0
+      },
+      {
+        "tile": [
+          1,
+          6
+        ],
+        "location": "own",
+        "opponent_probability": 0.0,
+        "excluded_probability": 0.0
+      },
+      {
+        "tile": [
+          2,
+          2
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          2,
+          3
+        ],
+        "location": "own",
+        "opponent_probability": 0.0,
+        "excluded_probability": 0.0
+      },
+      {
+        "tile": [
+          2,
+          4
+        ],
+        "location": "own",
+        "opponent_probability": 0.0,
+        "excluded_probability": 0.0
+      },
+      {
+        "tile": [
+          2,
+          5
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          2,
+          6
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          3,
+          3
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          3,
+          4
+        ],
+        "location": "own",
+        "opponent_probability": 0.0,
+        "excluded_probability": 0.0
+      },
+      {
+        "tile": [
+          3,
+          5
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          3,
+          6
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          4,
+          4
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          4,
+          5
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          4,
+          6
+        ],
+        "location": "own",
+        "opponent_probability": 0.0,
+        "excluded_probability": 0.0
+      },
+      {
+        "tile": [
+          5,
+          5
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          5,
+          6
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      },
+      {
+        "tile": [
+          6,
+          6
+        ],
+        "location": "candidate",
+        "opponent_probability": 0.3333333333333333,
+        "excluded_probability": 0.6666666666666667
+      }
+    ]
+  }
+}

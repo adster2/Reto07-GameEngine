@@ -1,0 +1,8 @@
+{
+  "created": false,
+  "head": "experiment/strategy-lab",
+  "base": "release/consegna-v1",
+  "error": "Post https://api.github.com/graphql: Forbidden",
+  "branch_pushed": true,
+  "review_url": "https://github.com/adster2/Reto07-GameEngine/compare/release/consegna-v1...experiment/strategy-lab"
+}

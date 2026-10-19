@@ -1,0 +1,28 @@
+{
+  "algorithm_source_commit": "59e82196a639c37969e623e2ed34dd3484aa3cee",
+  "source_sha256": {
+    "strategy_lab/__init__.py": "aa7710280907b04a86433878552adc814fb4525b2ff5a7060724c85470d88902",
+    "strategy_lab/__main__.py": "22a5287b73499868151fc5aa13c938ab4747a06d31aeeca15b3cee76c7c9d532",
+    "strategy_lab/arena.py": "6e18f8c51dba0475dc313939966004d4daa53fc369a628880e3d2cd0c83e269a",
+    "strategy_lab/belief.py": "ea06f470d8b32c62683a62a30303148b7eaefb8900e924e85767c2244ed14cb8",
+    "strategy_lab/gui.py": "2a529d83c922607683a4b5bed9ba253d5c4f5c9ec4a151afad2f195685597f46",
+    "strategy_lab/heuristic.py": "4d4d47207b024affe44de653287d467164e1320d4d01dcc4bcdc79f78948a147",
+    "strategy_lab/ismcts.py": "b0b1cc7bf47644aa84b55ee1d931bfcb6bcb8399bfad77ffff02211095f1cab5",
+    "strategy_lab/minimax.py": "0ec97a07a8bc2ffe472430f1465286e3883fcd7bfb6e66f24f3dd1dd9272a1d8",
+    "strategy_lab/tactics.py": "5e95d4c2e529320a6d570e213b473c42e77d3ed01a05f84ee28c117ac534f357",
+    "tests/test_strategy_lab.py": "053fde4ae12c66cb2f570cfc9c9e776606178ee32536ce0450daa2e654037099",
+    "tests/test_strategy_lab_mcts.py": "883450b05cd9dc75ead5229991d7c13c2cd4fa121aafbac5c2c92ac846be89cc"
+  },
+  "python_tests": {
+    "passed": 70,
+    "failed": 0,
+    "skipped": 0
+  },
+  "linux_gui_levels_tested": [
+    1,
+    3,
+    5
+  ],
+  "runtime_dependencies_added": [],
+  "scope": "Research only; accepted source and live Pages branch remain unchanged"
+}

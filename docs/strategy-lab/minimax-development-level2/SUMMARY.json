@@ -1,0 +1,62 @@
+{
+  "config": {
+    "level": 2,
+    "samples": 32,
+    "max_nodes": 18000,
+    "time_limit_ms": 1500,
+    "seed": 20261019,
+    "risk": 0,
+    "weights": {
+      "count": 36.0,
+      "points": 1.2,
+      "mobility": 8.0,
+      "reachable": 3.0,
+      "support": 1.0,
+      "isolated": 5.0,
+      "double_risk": 0.6,
+      "tempo": 3.0
+    }
+  },
+  "seed_start": 70000,
+  "seed_end": 70019,
+  "games": 80,
+  "plies": 1029,
+  "rule_violations": 0,
+  "replays": 80,
+  "decisions": 515,
+  "budget_limits": 0,
+  "completed_depths": {
+    "0": 0,
+    "1": 0,
+    "2": 515
+  },
+  "decision_p95_ms": 236.73020500064013,
+  "workers": 4,
+  "wall_seconds": 7.874127949999092,
+  "comparisons": [
+    {
+      "opponent": "ai3",
+      "games": 80,
+      "independent_deals": 20,
+      "wins": 38,
+      "draws": 3,
+      "losses": 39,
+      "match_points": 0.49375,
+      "approx_95ci_by_deal": [
+        0.390912957856412,
+        0.596587042143588
+      ]
+    }
+  ],
+  "interval_note": "Exploratory normal intervals clustered by deal; no multiple-comparison correction",
+  "limitations": [
+    "sampled-hand minimax retains strategy fusion",
+    "uniform beliefs do not model voluntary play preferences"
+  ],
+  "sha256": {
+    "COMPARISONS.csv": "15a619d2245692367999f17a8746e3f22b6c697db43617757b005c95dda090a1",
+    "DECISIONS.csv": "a53a2767d2e8abf6e1e5296ffdde6b64a86ccc61e6fc5e91a9d0ebbc20171c0f",
+    "EVENTS.jsonl.gz": "99f4f0b25b19eb9805b685521cd23c7cc8d554c3213f03c4638e9825476352c1",
+    "GAMES.csv": "853609781d4c4c6be61db3e16458ebf3fc920b881c14907821ec1332a4d5577c"
+  }
+}

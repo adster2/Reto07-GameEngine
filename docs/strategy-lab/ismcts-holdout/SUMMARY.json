@@ -1,0 +1,91 @@
+{
+  "config": {
+    "level": 3,
+    "samples": 128,
+    "iterations": 256,
+    "max_nodes": 30000,
+    "time_limit_ms": 1500,
+    "exploration": 1.0,
+    "seed": 20261019
+  },
+  "seed_start": 80000,
+  "seed_end": 80083,
+  "games": 1344,
+  "plies": 17790,
+  "rule_violations": 0,
+  "replays": 1344,
+  "decisions": 8923,
+  "budget_limits": 0,
+  "completed_depths": {
+    "44": 8923
+  },
+  "decision_p95_ms": 504.5197230010672,
+  "workers": 4,
+  "wall_seconds": 364.2509842719992,
+  "comparisons": [
+    {
+      "opponent": "ai2",
+      "games": 336,
+      "independent_deals": 84,
+      "wins": 165,
+      "draws": 0,
+      "losses": 171,
+      "match_points": 0.49107142857142855,
+      "approx_95ci_by_deal": [
+        0.4402861790764713,
+        0.5418566780663858
+      ]
+    },
+    {
+      "opponent": "ai3",
+      "games": 336,
+      "independent_deals": 84,
+      "wins": 172,
+      "draws": 7,
+      "losses": 157,
+      "match_points": 0.5223214285714286,
+      "approx_95ci_by_deal": [
+        0.4723263861465214,
+        0.5723164709963359
+      ]
+    },
+    {
+      "opponent": "greedy",
+      "games": 336,
+      "independent_deals": 84,
+      "wins": 177,
+      "draws": 5,
+      "losses": 154,
+      "match_points": 0.5342261904761905,
+      "approx_95ci_by_deal": [
+        0.48506635244382773,
+        0.5833860285085533
+      ]
+    },
+    {
+      "opponent": "random",
+      "games": 336,
+      "independent_deals": 84,
+      "wins": 227,
+      "draws": 4,
+      "losses": 105,
+      "match_points": 0.6815476190476191,
+      "approx_95ci_by_deal": [
+        0.6327298521576521,
+        0.730365385937586
+      ]
+    }
+  ],
+  "interval_note": "Exploratory normal intervals clustered by deal; no multiple-comparison correction",
+  "algorithm": "ismcts",
+  "limitations": [
+    "SO-ISMCTS is approximate, not a Bayesian equilibrium solver",
+    "uniform beliefs do not model voluntary play preferences"
+  ],
+  "sha256": {
+    "COMPARISONS.csv": "31b399bff2da22a167d5b3e6cf651f991a7ed48326f8c508e5d5725ed86063b8",
+    "DECISIONS.csv": "ef908ec787624655577099a65ccda61357095d94823c5c9ad6b874025a644cff",
+    "EVENTS.jsonl.gz": "fa03ada2d76a99adad90816f6477f9020f3c25eb943c07603138cc985d4b5de8",
+    "GAMES.csv": "d04690235a084c8b7b7cb85ac582f94e8a5689c0fbff9540889e891f30f65ccd"
+  }
+}

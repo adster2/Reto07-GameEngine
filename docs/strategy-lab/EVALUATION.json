@@ -1,0 +1,13 @@
+{
+  "algorithm_source_commit": "59e82196a639c37969e623e2ed34dd3484aa3cee",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "cpus_available": 5,
+  "command": "python -m strategy_lab arena --deals 84 --seed-start 80000 --opponents ai2 ai3 greedy random --workers 4 --output local_runs/strategy-lab/ismcts-holdout",
+  "original_files_changed": [],
+  "production_site_updated": false,
+  "weights_tuned_on_holdout": false,
+  "evaluation_complete": true,
+  "promotion_decision": "Do not replace accepted engine: no demonstrated advantage over legacy ai2 or ai3",
+  "auditor_sha256": "431b3bfef73131f3b86010a8585672a0a433d482adee57faf15632bf86e1de4d"
+}

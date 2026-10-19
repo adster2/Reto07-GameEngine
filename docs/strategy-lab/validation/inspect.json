@@ -1,0 +1,263 @@
+{
+  "model": "uniform-conditioned-on-public-tiles-and-forced-passes",
+  "unseen_count": 21,
+  "opponent_count": 7,
+  "expected_excluded_count": 14,
+  "candidate_count": 21,
+  "possible_hands": 116280,
+  "forbidden_values": [],
+  "tiles": [
+    {
+      "tile": [
+        0,
+        0
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        0,
+        1
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        0,
+        2
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        0,
+        3
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        0,
+        4
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        0,
+        5
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        0,
+        6
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        1,
+        1
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        1,
+        2
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        1,
+        3
+      ],
+      "location": "own",
+      "opponent_probability": 0.0,
+      "excluded_probability": 0.0
+    },
+    {
+      "tile": [
+        1,
+        4
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        1,
+        5
+      ],
+      "location": "own",
+      "opponent_probability": 0.0,
+      "excluded_probability": 0.0
+    },
+    {
+      "tile": [
+        1,
+        6
+      ],
+      "location": "own",
+      "opponent_probability": 0.0,
+      "excluded_probability": 0.0
+    },
+    {
+      "tile": [
+        2,
+        2
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        2,
+        3
+      ],
+      "location": "own",
+      "opponent_probability": 0.0,
+      "excluded_probability": 0.0
+    },
+    {
+      "tile": [
+        2,
+        4
+      ],
+      "location": "own",
+      "opponent_probability": 0.0,
+      "excluded_probability": 0.0
+    },
+    {
+      "tile": [
+        2,
+        5
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        2,
+        6
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        3,
+        3
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        3,
+        4
+      ],
+      "location": "own",
+      "opponent_probability": 0.0,
+      "excluded_probability": 0.0
+    },
+    {
+      "tile": [
+        3,
+        5
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        3,
+        6
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        4,
+        4
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        4,
+        5
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        4,
+        6
+      ],
+      "location": "own",
+      "opponent_probability": 0.0,
+      "excluded_probability": 0.0
+    },
+    {
+      "tile": [
+        5,
+        5
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        5,
+        6
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    },
+    {
+      "tile": [
+        6,
+        6
+      ],
+      "location": "candidate",
+      "opponent_probability": 0.3333333333333333,
+      "excluded_probability": 0.6666666666666667
+    }
+  ]
+}

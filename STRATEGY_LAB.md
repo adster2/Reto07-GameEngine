@@ -9,8 +9,9 @@ La consegna accettata è congelata a `53b349bc82db48d44deeeed7df5d2c760755b787`:
 Il ramo `experiment/strategy-lab` aggiunge il laboratorio `strategy_lab/` e
 prove/documenti propri. Non modifica i file della consegna, il motore originale,
 l'interfaccia browser o `gh-pages`. Non pubblicare il laboratorio sul sito della
-consegna prima di una valutazione indipendente. I risultati saranno in
-`docs/strategy-lab/`; nessun miglioramento di forza è implicito nel nome minimax.
+consegna prima di una valutazione indipendente. I risultati reali sono in
+[docs/strategy-lab/RESULTS.md](docs/strategy-lab/RESULTS.md): il primo esperimento
+non dimostra ancora un vantaggio sulla CPU accettata.
 Il metodo principale è ora ISMCTS; minimax rimane solo un confronto documentato.
 
 ## Il ragionamento sulle tessere è corretto, con un limite importante
@@ -29,6 +30,8 @@ con la sua ultima tessera, non una sola. Le 14 escluse restano sconosciute.
 Un passaggio obbligatorio è una prova più forte: esclude dalla mano corrente
 ogni tessera contenente i valori liberi in quel momento. Non essendoci pesca,
 questa esclusione resta valida. Si usano gli estremi storici del passaggio.
+Giocare sull'altro estremo non prova invece che manchi un certo valore: le
+scelte volontarie non vengono convertite in esclusioni certe.
 Il conteggio di base era già presente nella consegna; il laboratorio ne espone
 le probabilità marginali, le tessere certamente escluse, il numero combinatorio
 delle mani e la probabilità che l'avversario debba passare.
@@ -160,6 +163,7 @@ Confronto riproducibile, stessi deal e quattro combinazioni di posto/iniziante:
 python -m strategy_lab arena --deals 20 --seed-start 70000 --workers 4 --output local_runs/lab-development
 python -m strategy_lab arena --deals 84 --seed-start 80000 --opponents ai2 ai3 greedy random --workers 4 --output local_runs/lab-holdout
 python -m unittest tests.test_strategy_lab tests.test_strategy_lab_mcts -v
+python -m strategy_lab.audit local_runs/lab-holdout
 ```
 
 Un confronto da 84 deal × 4 combinazioni × 4 avversari comprende 1.344 partite.

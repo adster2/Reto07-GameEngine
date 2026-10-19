@@ -1,0 +1,1 @@
+{"complete_game": true, "error": null, "events": 15, "cpu_decisions": 8, "policy": "ismcts1"}

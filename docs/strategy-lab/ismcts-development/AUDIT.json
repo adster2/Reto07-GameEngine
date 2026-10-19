@@ -1,0 +1,9 @@
+{
+  "games": 240,
+  "plies": 3131,
+  "replays_verified": 240,
+  "balanced_cases": true,
+  "hashes_verified": true,
+  "decision_rows_reconciled": true,
+  "rule_violations": 0
+}

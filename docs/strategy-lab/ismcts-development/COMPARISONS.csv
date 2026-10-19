@@ -1,0 +1,4 @@
+opponent,games,independent_deals,wins,draws,losses,match_points
+ai3,80,20,42,7,31,0.56875
+greedy,80,20,38,3,39,0.49375
+random,80,20,55,3,22,0.70625

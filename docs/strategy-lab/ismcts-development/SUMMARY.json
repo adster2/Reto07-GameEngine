@@ -1,0 +1,78 @@
+{
+  "config": {
+    "level": 3,
+    "samples": 128,
+    "iterations": 256,
+    "max_nodes": 30000,
+    "time_limit_ms": 1500,
+    "exploration": 1.0,
+    "seed": 20261019
+  },
+  "seed_start": 70000,
+  "seed_end": 70019,
+  "games": 240,
+  "plies": 3131,
+  "rule_violations": 0,
+  "replays": 240,
+  "decisions": 1581,
+  "budget_limits": 0,
+  "completed_depths": {
+    "44": 1581
+  },
+  "decision_p95_ms": 584.9781550004991,
+  "workers": 4,
+  "wall_seconds": 74.85945630400056,
+  "comparisons": [
+    {
+      "opponent": "ai3",
+      "games": 80,
+      "independent_deals": 20,
+      "wins": 42,
+      "draws": 7,
+      "losses": 31,
+      "match_points": 0.56875,
+      "approx_95ci_by_deal": [
+        0.47903885902080234,
+        0.6584611409791976
+      ]
+    },
+    {
+      "opponent": "greedy",
+      "games": 80,
+      "independent_deals": 20,
+      "wins": 38,
+      "draws": 3,
+      "losses": 39,
+      "match_points": 0.49375,
+      "approx_95ci_by_deal": [
+        0.38640373600009714,
+        0.6010962639999029
+      ]
+    },
+    {
+      "opponent": "random",
+      "games": 80,
+      "independent_deals": 20,
+      "wins": 55,
+      "draws": 3,
+      "losses": 22,
+      "match_points": 0.70625,
+      "approx_95ci_by_deal": [
+        0.6186772670711278,
+        0.7938227329288723
+      ]
+    }
+  ],
+  "interval_note": "Exploratory normal intervals clustered by deal; no multiple-comparison correction",
+  "algorithm": "ismcts",
+  "limitations": [
+    "SO-ISMCTS is approximate, not a Bayesian equilibrium solver",
+    "uniform beliefs do not model voluntary play preferences"
+  ],
+  "sha256": {
+    "COMPARISONS.csv": "e87c4ffafd76c398a9ff8c663a2b2e967184043cef5e436d160cce96f3257609",
+    "DECISIONS.csv": "33c555ed9da5b2019f35e4e96251078d970d51b1aedf8fddfd66d501d5b4540c",
+    "EVENTS.jsonl.gz": "5da1e705db20fca4b756deaf268c0b7dd6cff1d53fb264a99301cfb99e6656ae",
+    "GAMES.csv": "2cd3063753bd6f995cd0c5f0a06de432d994b1aa7de2f4ce1bbb6c14e5b1fb31"
+  }
+}
