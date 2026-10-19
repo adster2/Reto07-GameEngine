@@ -1,0 +1,53 @@
+test_cpu_uses_strategy_and_follows_difficulty (tests.test_controller.ControllerTests.test_cpu_uses_strategy_and_follows_difficulty) ... ok
+test_full_gui_controller_match (tests.test_controller.ControllerTests.test_full_gui_controller_match) ... ok
+test_manual_hand_is_explicit_and_atomic (tests.test_controller.ControllerTests.test_manual_hand_is_explicit_and_atomic) ... ok
+test_stale_async_result_is_not_applied (tests.test_controller.ControllerTests.test_stale_async_result_is_not_applied) ... ok
+test_baseline_is_confirmed_and_movements_are_ignored (tests.test_events.EventTests.test_baseline_is_confirmed_and_movements_are_ignored) ... ok
+test_complete_game_undo_all_and_replay (tests.test_events.EventTests.test_complete_game_undo_all_and_replay) ... ok
+test_concurrent_double_commit (tests.test_events.EventTests.test_concurrent_double_commit) ... ok
+test_loaded_event_ids_are_never_reused (tests.test_events.EventTests.test_loaded_event_ids_are_never_reused) ... ok
+test_misread_correct_confirm_duplicate_undo (tests.test_events.EventTests.test_misread_correct_confirm_duplicate_undo) ... ok
+test_pending_exclusion_and_illegal_real_move (tests.test_events.EventTests.test_pending_exclusion_and_illegal_real_move) ... ok
+test_replay_tampering_rejected (tests.test_events.EventTests.test_replay_tampering_rejected) ... ok
+test_wrong_side_reread_and_discard (tests.test_events.EventTests.test_wrong_side_reread_and_discard) ... ok
+test_zero_multiple_ambiguous_and_low_confidence (tests.test_events.EventTests.test_zero_multiple_ambiguous_and_low_confidence) ... ok
+test_anticheat_ranking_all_levels (tests.test_knowledge_strategy.KnowledgeStrategyTests.test_anticheat_ranking_all_levels) ... ok
+test_budget_fallback_and_determinism (tests.test_knowledge_strategy.KnowledgeStrategyTests.test_budget_fallback_and_determinism) ... ok
+test_five_depths_and_complete_rankings (tests.test_knowledge_strategy.KnowledgeStrategyTests.test_five_depths_and_complete_rankings) ... ok
+test_inconsistent_knowledge_is_diagnosed (tests.test_knowledge_strategy.KnowledgeStrategyTests.test_inconsistent_knowledge_is_diagnosed) ... ok
+test_information_boundary_and_immutability (tests.test_knowledge_strategy.KnowledgeStrategyTests.test_information_boundary_and_immutability) ... ok
+test_pass_constraints_and_unseen_includes_excluded (tests.test_knowledge_strategy.KnowledgeStrategyTests.test_pass_constraints_and_unseen_includes_excluded) ... ok
+test_pass_counts_as_one_ply_and_terminal_scale (tests.test_knowledge_strategy.KnowledgeStrategyTests.test_pass_counts_as_one_ply_and_terminal_scale) ... ok
+test_seed_independent_of_deal_seed (tests.test_knowledge_strategy.KnowledgeStrategyTests.test_seed_independent_of_deal_seed) ... ok
+test_duplicates_broken_chain_and_bad_terminal_rejected (tests.test_rules.RulesTests.test_duplicates_broken_chain_and_bad_terminal_rejected) ... ok
+test_empty_hand_cannot_follow_pass_and_collections_are_frozen (tests.test_rules.RulesTests.test_empty_hand_cannot_follow_pass_and_collections_are_frozen) ... ok
+test_forced_pass_block_draw_and_win (tests.test_rules.RulesTests.test_forced_pass_block_draw_and_win) ... ok
+test_immediate_empty_win_and_pass_reset (tests.test_rules.RulesTests.test_immediate_empty_win_and_pass_reset) ... ok
+test_no_draw_distribution_bounds (tests.test_rules.RulesTests.test_no_draw_distribution_bounds) ... ok
+test_opening_and_both_orientations (tests.test_rules.RulesTests.test_opening_and_both_orientations) ... ok
+test_private_snapshot_rejects_forged_history (tests.test_rules.RulesTests.test_private_snapshot_rejects_forged_history) ... ok
+test_random_transition_properties (tests.test_rules.RulesTests.test_random_transition_properties) ... ok
+test_reproducible_deal_and_no_draw (tests.test_rules.RulesTests.test_reproducible_deal_and_no_draw) ... ok
+test_sides_flip_equal_ends_and_double (tests.test_rules.RulesTests.test_sides_flip_equal_ends_and_double) ... ok
+test_tiles_and_validation (tests.test_rules.RulesTests.test_tiles_and_validation) ... ok
+test_turn_identity_and_illegal_pass (tests.test_rules.RulesTests.test_turn_identity_and_illegal_pass) ... ok
+test_all_json_scenarios (tests.test_scenarios_cli.ScenarioAndCLITests.test_all_json_scenarios) ... ok
+test_cli_full_match_and_replay (tests.test_scenarios_cli.ScenarioAndCLITests.test_cli_full_match_and_replay) ... ok
+test_measurement_runners_and_balanced_seats (tests.test_scenarios_cli.ScenarioAndCLITests.test_measurement_runners_and_balanced_seats) ... ok
+test_reproducibility_except_clock (tests.test_scenarios_cli.ScenarioAndCLITests.test_reproducibility_except_clock) ... ok
+test_actual_optional_image_preview (tests.test_tk_gui.TkWidgetTests.test_actual_optional_image_preview) ... skipped 'Desktop display required (controller tests run headless)'
+test_advice_is_optional_and_all_moves_available (tests.test_tk_gui.TkWidgetTests.test_advice_is_optional_and_all_moves_available) ... skipped 'Desktop display required (controller tests run headless)'
+test_hand_button_side_dialog_confirm_and_undo (tests.test_tk_gui.TkWidgetTests.test_hand_button_side_dialog_confirm_and_undo) ... skipped 'Desktop display required (controller tests run headless)'
+test_advice_all_legal_moves_and_json_protocol (tests.test_web_bridge.WebBridgeTests.test_advice_all_legal_moves_and_json_protocol) ... ok
+test_complete_games_all_five_levels_and_replay (tests.test_web_bridge.WebBridgeTests.test_complete_games_all_five_levels_and_replay) ... ok
+test_cpu_receives_only_knowledge (tests.test_web_bridge.WebBridgeTests.test_cpu_receives_only_knowledge) ... ok
+test_duplicate_confirm_and_stale_new_game_ids (tests.test_web_bridge.WebBridgeTests.test_duplicate_confirm_and_stale_new_game_ids) ... ok
+test_illegal_pending_correction_reread_and_undo (tests.test_web_bridge.WebBridgeTests.test_illegal_pending_correction_reread_and_undo) ... ok
+test_snapshot_never_exposes_referee_secrets (tests.test_web_bridge.WebBridgeTests.test_snapshot_never_exposes_referee_secrets) ... ok
+test_static_build_reuses_byte_identical_modules (tests.test_web_bridge.WebBridgeTests.test_static_build_reuses_byte_identical_modules) ... ok
+test_turn_level_and_load_validation_are_atomic (tests.test_web_bridge.WebBridgeTests.test_turn_level_and_load_validation_are_atomic) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 3.104s
+
+OK (skipped=3)

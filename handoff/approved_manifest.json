@@ -1,0 +1,25 @@
+{
+  "format_version": 1,
+  "approved_tag": "consegna-v1.0",
+  "approved_source_commit": "53b349bc82db48d44deeeed7df5d2c760755b787",
+  "documentation_branch": "docs/local-integration-handoff",
+  "site_commit": "0192cb9654acfa381835f70c457e35dadffeb088",
+  "normalization": "CRLF to LF; no other transformations",
+  "sha256_lf": {
+    "domino_engine/__init__.py": "ee8ec193a0853e81ba9a73a8bd8a80fc18a03f38104b13ffa1661020f799ba4b",
+    "domino_engine/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "domino_engine/cli.py": "86d07c41cb9dfdcb9a0ed3f1a982de8d506d3f1a8c8a4741365746b3dc549f37",
+    "domino_engine/controller.py": "95153b3adda6abf30e2b43654c1cd3faaa735981f58c32ad00a61231accf9641",
+    "domino_engine/events.py": "0d672f5b9e156ed9c2ca8900a957fdebb59fb4796cad32ae51ce1a10846c03bb",
+    "domino_engine/experiments.py": "1cee4b4c2106b159bd55028b27f92c68d3ff4717ee68a89fa965f29ebba114bb",
+    "domino_engine/gui.py": "dbffef6bc7701ba191a113a923607948f3c5a16f7d5e94cba6a98b0da5175bb6",
+    "domino_engine/knowledge.py": "7f41a6bcde3fd8380fae1ad64b145420982fbdf229abdb63480874edcd2395b9",
+    "domino_engine/rules.py": "ebdc8aa882964c45aa07360c0f3297645658dea41612d29d89a00dd2ca172729",
+    "domino_engine/scenarios.py": "8cd30afbfee0f0c84a7ab97a4d2829c8722fc5f126103479f2f3202e0785ad14",
+    "domino_engine/simulation.py": "0b710dd758f5317954a55d2f6393deb529d0a955f0c044ca0ebb3ed91f30a9f0",
+    "domino_engine/state.py": "dd3253f88f3b2f2e3494337a3787f36e7f3573975fb65fa0f04c16fa42ecc5b5",
+    "domino_engine/strategy.py": "e70d154b3c01a245523f4eff95035f9ba91297fe5a2472079e4e607ecdfa6920",
+    "domino_engine/tiles.py": "cebbd194fca86e5d88d87b58278514b1fda4e167dd2391ebea4fc125e759613d",
+    "domino_engine/web_bridge.py": "496e72471bac7f60eeac6a81d86326120aae85c86ff4f008dbc930fd30789a74"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "recorded_at_utc": "2026-10-19T18:01:05.316Z",
+  "purpose": "Documentation and runnable handoff example validation; no new strategy campaign",
+  "approved_source_commit": "53b349bc82db48d44deeeed7df5d2c760755b787",
+  "branch": "docs/local-integration-handoff",
+  "commands": [
+    {
+      "command": "python -m handoff.check_engine",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "approved_tag": "consegna-v1.0",
+        "approved_source_commit": "53b349bc82db48d44deeeed7df5d2c760755b787",
+        "source_files_verified": 15,
+        "hash_normalization": "CRLF to LF",
+        "python": "3.12.14",
+        "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+        "public_only_ranking": {
+          "status": "PASS",
+          "real_opponent_hand_supplied": false,
+          "ranked_moves": 12,
+          "recommendation": {
+            "tile": [
+              3,
+              3
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              3,
+              3
+            ]
+          },
+          "diagnostics": {
+            "requested_depth": 2,
+            "completed_depth": 2,
+            "deepest_visited": 2,
+            "nodes": 192,
+            "samples": 8,
+            "elapsed_ms": 20.538025000860216,
+            "budget_exhausted": false,
+            "limit": null
+          }
+        },
+        "virtual_protocol_fixture": {
+          "status": "PASS",
+          "physical_integration": false,
+          "checks": [
+            "proposal_does_not_mutate",
+            "explicit_commit",
+            "idempotency",
+            "journal_roundtrip",
+            "undo",
+            "undone_id_rejected"
+          ]
+        },
+        "physical_camera_test": "NOT_RUN"
+      }
+    },
+    {
+      "command": "python -m unittest discover -v",
+      "exit_code": 0,
+      "discovered": 48,
+      "passed": 45,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 3,
+      "skip_reason": "Desktop display unavailable for three Tk widget tests",
+      "log": "unittest.log"
+    }
+  ],
+  "historical_results_are_not_rerun_here": true,
+  "windows_test": "NOT_RUN",
+  "physical_tracker": "NOT_IMPLEMENTED_IN_CLOUD_HANDOFF",
+  "opencv_integration": "NOT_RUN",
+  "public_site_unchanged": true,
+  "approved_checkout_files_byte_identical": 133,
+  "approved_checkout_modified_files": [],
+  "documentation_local_links": "PASS"
+}
