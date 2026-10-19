@@ -1,0 +1,65 @@
+{
+  "name": "misread 3-5 instead of 3-6",
+  "initial": {
+    "hands": [
+      [
+        [
+          3,
+          6
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ]
+      ]
+    ]
+  },
+  "steps": [
+    {
+      "action": "observe",
+      "tiles": [
+        [
+          3,
+          5
+        ]
+      ],
+      "expect": {
+        "pending_legal": false,
+        "events": 0
+      }
+    },
+    {
+      "action": "reread",
+      "tiles": [
+        [
+          3,
+          6
+        ]
+      ],
+      "expect": {
+        "pending_legal": true
+      }
+    },
+    {
+      "action": "commit",
+      "expect": {
+        "chain": [
+          [
+            3,
+            6
+          ]
+        ],
+        "hand_counts": [
+          1,
+          1
+        ]
+      }
+    }
+  ]
+}

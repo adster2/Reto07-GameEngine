@@ -1,0 +1,53 @@
+{
+  "name": "blocked win no draw",
+  "initial": {
+    "hands": [
+      [
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          5,
+          5
+        ]
+      ]
+    ],
+    "chain": [
+      [
+        6,
+        6
+      ]
+    ]
+  },
+  "steps": [
+    {
+      "action": "propose",
+      "move": {
+        "pass": true
+      }
+    },
+    {
+      "action": "commit"
+    },
+    {
+      "action": "propose",
+      "move": {
+        "pass": true
+      }
+    },
+    {
+      "action": "commit",
+      "expect": {
+        "winner": "ASSISTED",
+        "reason": "blocked",
+        "hand_counts": [
+          1,
+          1
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "name": "double equal endpoints and immediate win",
+  "initial": {
+    "hands": [
+      [
+        [
+          6,
+          6
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "chain": [
+      [
+        6,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        6
+      ]
+    ]
+  },
+  "expect_initial": {
+    "legal_count": 2
+  },
+  "steps": [
+    {
+      "action": "propose",
+      "move": {
+        "tile": [
+          6,
+          6
+        ],
+        "side": "LEFT",
+        "orientation": [
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "action": "commit",
+      "expect": {
+        "terminal": true,
+        "winner": "ASSISTED",
+        "reason": "empty_hand",
+        "chain": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      }
+    }
+  ]
+}
