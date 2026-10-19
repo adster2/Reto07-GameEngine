@@ -7,11 +7,17 @@ livelli, controllo delle proposte, consigli facoltativi, undo e save/load.
 48 test passati, sei partite Chromium e 1.000 partite tramite protocollo JSON
 concluse senza violazioni. Test terminati su richiesta dell'utente.
 
-Sito generato e caricato nel branch `gh-pages`; **attivazione e accessibilità
-pubblica non confermate**: il proxy della macchina cloud blocca l'API GitHub e
-il dominio del sito con 403. Il proprietario deve verificare/attivare Settings →
-Pages → gh-pages → / (root) → Save. Nessuna modifica alla visibilità del repository.
+Il proprietario ha autorizzato la pubblicazione, attivato Pages dal proprio
+account e riferito una partita completa nel sito. La verifica HTTPS indipendente
+dal cloud rimane bloccata dal proxy con 403; questa limitazione non descrive
+la raggiungibilità dal browser del proprietario.
 Prove dettagliate in WEB_TEST_RESULTS.md e guida principianti in GUIDA_GITHUB.md.
+
+Aggiornamento richiesto dopo la prima partita: tavolo browser con curve, doppie
+trasversali, scelta della direzione con anteprima prima della conferma, adattamento
+allo schermo e conservazione della disposizione nei salvataggi. È una modifica
+del renderer web: motore, AI e interfaccia desktop mantengono le regole esistenti.
+Le regressioni specifiche sono documentate in WEB_TEST_RESULTS.md.
 
 La sezione seguente descrive la prima consegna desktop e i suoi collaudi storici.
 

@@ -7,6 +7,35 @@ GitHub Pages serve i file; jsDelivr serve il runtime Python via HTTPS. Il primo
 avvio scarica circa 14 MB di runtime. Il browser può riusare la propria cache.
 La versione desktop resta eseguibile offline, come prima.
 
+## Disposizione del tavolo nel browser
+
+`web/table-layout.js` dispone la catena pubblica in due dimensioni. Ogni tessera
+conserva l'ordine logico delle facce fornito da Python: le curve cambiano solo
+coordinate e rotazione, le doppie sono trasversali. Le frecce nella proposta
+permettono di scegliere la direzione prima del commit, con anteprima evidenziata.
+Le collisioni e le direzioni che allungano inutilmente il tavolo sono escluse
+quando esiste una posa compatta. Una disposizione manuale che circonda un'estremità
+viene riordinata per lasciare giocabile la mossa legale; questa scelta grafica
+non crea passaggi, nuove estremità o cambiamenti nelle regole.
+
+La CPU usa la disposizione automatica; anche la sua proposta può essere ruotata
+prima di confermarla. Undo ricostruisce la disposizione dalla cronologia pubblica.
+Il campo opzionale `table_layout` nei salvataggi contiene solo identità pubbliche
+e direzioni grafiche; i vecchi file restano caricabili. Il motore e il contratto
+della camera non ricevono coordinate del tavolo virtuale.
+
+Regressioni mirate, senza ripetere i tornei del motore:
+
+```sh
+node scripts/test_table_layout.cjs
+python -m unittest tests.test_web_bridge -v
+python scripts/test_table_browser.py --environment-tls
+```
+
+Node e Playwright sono strumenti di sviluppo opzionali. Non servono a chi gioca.
+Il runner browser richiede un server statico interno della directory generata;
+URL e directory risultati sono configurabili con `--url` e `--output`.
+
 ## Un solo motore
 
 `python scripts/build_web.py` genera `local_runs/site/`. Copia byte per byte

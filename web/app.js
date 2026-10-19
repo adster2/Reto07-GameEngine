@@ -4,6 +4,8 @@ const pipPositions = [[],[4],[0,8],[0,4,8],[0,2,6,8],[0,2,4,6,8],[0,2,3,5,6,8]];
 let state = null, busy = true, currentCommand = 'init', cpuPaused = false;
 let worker, sequence = 0, ready = false;
 const waiting = new Map();
+let boardPreferences = {}, pendingVisual = null;
+const poseLabels = {right: '→ Destra', down: '↓ Basso', left: '← Sinistra', up: '↑ Alto'};
 
 function element(tag, className, text) {
   const node = document.createElement(tag);
@@ -77,6 +79,15 @@ async function run(command, data = {}) {
   try {
     const reply = await rpc({command, token: state?.token, ...data});
     if (command === 'save') return reply;
+    if (command === 'confirm' && pendingVisual?.id === state.pending?.id) {
+      boardPreferences = {...pendingVisual.layout.used};
+    }
+    if (command === 'new_game') boardPreferences = {};
+    if (command === 'load') boardPreferences = TableLayout.cleanPreferences(data.table_layout);
+    if (command === 'undo') {
+      const remaining = new Set(reply.view.chain.map(t => [...t].sort((a,b) => a-b).join('-')));
+      boardPreferences = Object.fromEntries(Object.entries(boardPreferences).filter(([key]) => remaining.has(key)));
+    }
     state = reply;
     return reply;
   } catch (error) {
@@ -88,6 +99,99 @@ async function run(command, data = {}) {
     render();
     scheduleDecision();
   }
+}
+function renderTable() {
+  if (!state) return;
+  const pending = state.pending;
+  let layout = TableLayout.history(state.view.history, boardPreferences);
+  const poseControls = byId('pose-controls');
+  poseControls.hidden = !pending?.legal || pending.move.pass;
+  poseControls.replaceChildren();
+  if (pending?.legal && !pending.move.pass) {
+    const prepared = TableLayout.prepare(state.view.history, boardPreferences, pending.move);
+    const previous = pendingVisual?.id === pending.id ? pendingVisual.direction : null;
+    const selected = prepared.choices.find(c => c.direction === previous) || prepared.choices[0];
+    layout = selected.layout;
+    pendingVisual = {id: pending.id, direction: selected.direction, layout};
+    poseControls.append(element('span', 'pose-label', 'Direzione sul tavolo'));
+    for (const [direction, label] of Object.entries(poseLabels)) {
+      const choice = prepared.choices.find(c => c.direction === direction);
+      const button = element('button', 'pose-button', label);
+      button.type = 'button';
+      button.setAttribute('aria-label', `Posa verso ${direction === 'up' ? 'l’alto' : direction === 'down' ? 'il basso' : direction === 'left' ? 'sinistra' : 'destra'}`);
+      button.setAttribute('aria-pressed', String(selected.direction === direction));
+      button.disabled = busy || !choice;
+      button.title = choice ? 'Controlla l’anteprima sul tavolo prima di confermare.' : 'Questa direzione non lascia spazio alla tessera o allunga troppo il tavolo.';
+      button.addEventListener('click', () => {
+        pendingVisual = {id: pending.id, direction, layout: choice.layout};
+        renderTable();
+      });
+      poseControls.append(button);
+    }
+  } else pendingVisual = null;
+  const preview = Boolean(pending?.legal && !pending.move.pass);
+  const ends = preview ? pending.new_ends : state.ends;
+  byId('left-end').textContent = ends ? ends[0] : '—';
+  byId('right-end').textContent = ends ? ends[1] : '—';
+  byId('table-hint').textContent = preview ? 'Anteprima: la tessera evidenziata attende conferma. Usa le frecce per cambiare direzione.' :
+    layout.adjusted ? 'Il tavolo è stato riordinato per lasciare spazio. S e D indicano le due estremità.' :
+    'Le doppie si posano di traverso. S e D indicano le due estremità.';
+  const chain = byId('chain');
+  if (!layout.tiles.length) {
+    const empty = element('p','empty-board','Il tavolo è pronto.');
+    empty.append(document.createElement('br'),element('span','','Chi inizia può giocare qualsiasi tessera.'));
+    chain.replaceChildren(empty);
+    return;
+  }
+  const bounds = TableLayout.bounds(layout), padding = 48;
+  const width = bounds.right - bounds.left + padding * 2;
+  const height = bounds.bottom - bounds.top + padding * 2;
+  const scale = Math.min(1, Math.max(1, chain.clientWidth - 8) / width, Math.max(1, chain.clientHeight - 8) / height);
+  const stage = element('div', 'chain-space');
+  stage.style.width = `${width}px`;
+  stage.style.height = `${height}px`;
+  stage.style.transform = `translate(-50%, -50%) scale(${scale})`;
+  const position = node => {
+    node.style.left = `${Number(node.dataset.x) - bounds.left + padding}px`;
+    node.style.top = `${Number(node.dataset.y) - bounds.top + padding}px`;
+  };
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('width', width); svg.setAttribute('height', height);
+  svg.setAttribute('aria-hidden', 'true');
+  svg.classList.add('chain-links');
+  for (const link of layout.connections) {
+    const line = document.createElementNS(svg.namespaceURI, 'line');
+    for (const [attribute, value] of Object.entries({x1:link.from.x-bounds.left+padding,y1:link.from.y-bounds.top+padding,
+      x2:link.to.x-bounds.left+padding,y2:link.to.y-bounds.top+padding})) line.setAttribute(attribute, value);
+    svg.append(line);
+  }
+  stage.append(svg);
+  for (const tile of layout.tiles) {
+    const node = domino(tile.faces);
+    node.classList.add('board-tile');
+    node.dataset.tile = tile.key;
+    node.dataset.direction = tile.direction;
+    node.dataset.double = String(tile.double);
+    node.dataset.x = tile.x; node.dataset.y = tile.y;
+    const vector = TableLayout.directions[tile.direction];
+    const angle = Math.atan2(vector[1], vector[0]) * 180 / Math.PI + (tile.double ? 90 : 0);
+    node.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
+    if (preview && tile.key === TableLayout.key(pending.move)) {
+      node.classList.add('preview-tile');
+      node.setAttribute('aria-label', node.getAttribute('aria-label') + ', anteprima da confermare');
+    }
+    position(node);
+    stage.append(node);
+  }
+  for (const left of [true, false]) {
+    const tile = layout.tiles[left ? 0 : layout.tiles.length - 1];
+    const point = TableLayout.endpoint(tile, left);
+    const badge = element('span', 'chain-end', left ? 'S' : 'D');
+    badge.setAttribute('aria-label', left ? 'Estremo sinistro' : 'Estremo destro');
+    badge.dataset.x = point.x; badge.dataset.y = point.y;
+    position(badge); stage.append(badge);
+  }
+  chain.replaceChildren(stage);
 }
 function render() {
   document.body.dataset.busy = String(busy);
@@ -109,15 +213,7 @@ function render() {
   const backs = byId('cpu-hand');
   backs.replaceChildren(...Array.from({length: v.opponent_count}, () => element('span','tile-back')));
   backs.setAttribute('aria-label', `${v.opponent_count} tessere coperte`);
-  byId('left-end').textContent = state.ends ? state.ends[0] : '—';
-  byId('right-end').textContent = state.ends ? state.ends[1] : '—';
-  const chain = byId('chain');
-  if (v.chain.length) chain.replaceChildren(...v.chain.map(t => domino(t)));
-  else {
-    const empty = element('p','empty-board','Il tavolo è pronto.');
-    empty.append(document.createElement('br'),element('span','','Chi inizia può giocare qualsiasi tessera.'));
-    chain.replaceChildren(empty);
-  }
+  renderTable();
   byId('ply-count').textContent = `${state.event_count} ${state.event_count === 1 ? 'mossa confermata' : 'mosse confermate'}`;
   byId('hand').replaceChildren(...v.hand.map(tile => {
     const button = element('button');
@@ -221,7 +317,8 @@ byId('retry').addEventListener('click', () => location.reload());
 byId('save-game').addEventListener('click', async () => {
   const saved = await run('save');
   if (!saved) return;
-  const url = URL.createObjectURL(new Blob([JSON.stringify({format:'reto07-browser-v1',...saved},null,2)],{type:'application/json'}));
+  const table_layout = TableLayout.history(state.view.history, boardPreferences).used;
+  const url = URL.createObjectURL(new Blob([JSON.stringify({format:'reto07-browser-v1',...saved,table_layout},null,2)],{type:'application/json'}));
   const link = element('a'); link.href=url; link.download='reto07-partita.json'; link.click();
   setTimeout(() => URL.revokeObjectURL(url),1000);
 });
@@ -234,10 +331,11 @@ byId('load-file').addEventListener('change', async event => {
     const saved = JSON.parse(await file.text());
     if (saved.format !== 'reto07-browser-v1') throw new Error('Questo non è un salvataggio del gioco online.');
     cpuPaused = false;
-    await run('load',{save:saved.save,level:saved.level});
+    await run('load',{save:saved.save,level:saved.level,table_layout:TableLayout.cleanPreferences(saved.table_layout)});
   } catch (error) { showError(`Non riesco a leggere la partita: ${error.message}`); }
   event.target.value='';
 });
+new ResizeObserver(() => renderTable()).observe(byId('chain'));
 
 const version = document.querySelector('meta[name="reto07-build"]')?.content || 'development';
 const workerURL = new URL('worker.js',location.href); workerURL.searchParams.set('v',version);

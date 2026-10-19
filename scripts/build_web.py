@@ -35,7 +35,9 @@ def build(output):
     commit = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
     index = output/'index.html'
     html = index.read_text(encoding='utf-8').replace('<head>', '<head>\n  <meta name="reto07-build" content="'+commit+'">')
-    html = html.replace('href="style.css"', 'href="style.css?v='+commit+'"').replace('src="app.js"', 'src="app.js?v='+commit+'"')
+    html = html.replace('href="style.css"', 'href="style.css?v='+commit+'"')
+    for script in ('table-layout.js', 'app.js'):
+        html = html.replace('src="'+script+'"', 'src="'+script+'?v='+commit+'"')
     index.write_text(html, encoding='utf-8')
     manifest = {'version': 1, 'source_commit': commit,
                 'runtime': 'https://cdn.jsdelivr.net/pyodide/v0.27.7/full/', 'files': entries}

@@ -8,7 +8,7 @@ installare Python.
 
 | Posto | A cosa serve |
 |---|---|
-| Il gioco online | Apri la pagina, scegli il livello e giochi contro la CPU. Il link verificato è nel README. |
+| Il gioco online | Apri la pagina, scegli il livello e giochi contro la CPU. Il link è nel README. |
 | [Il progetto su GitHub](https://github.com/adster2/Reto07-GameEngine) | Contiene tutti i file: cervello, interfacce, test, istruzioni e risultati. |
 | L'ambiente cloud di questa chat | È la macchina sulla quale sviluppo e provo il programma per te. |
 
@@ -93,7 +93,12 @@ versioni e risolverlo preservando il lavoro. Non significa che il progetto sia p
 ## Come giochiamo online?
 
 Apri il link indicato nel README, attendi il primo caricamento, clicca una tua
-tessera disponibile e scegli una posa. Premi **Conferma mossa**. La CPU pensa,
+tessera disponibile e scegli una posa. Prima di confermare, usa le frecce
+**Destra / Basso / Sinistra / Alto** per far proseguire o curvare la catena.
+La tessera evidenziata sul tavolo è un'anteprima: puoi cambiare direzione senza
+consumare il turno. Le frecce non disponibili non lasciano spazio; le doppie si
+posano di traverso. S e D indicano le due estremità sulle quali puoi giocare.
+Premi **Conferma mossa**. La CPU pensa,
 propone la propria tessera e aspetta che tu confermi anche quella. Il livello si
 sceglie dal selettore CPU o quando inizi una nuova partita. I consigli per te sono
 facoltativi e inizialmente nascosti.
@@ -102,4 +107,6 @@ Serve un browser moderno e la connessione per caricare la pagina e il motore.
 Le partite vengono calcolate nel browser: non occorrono account o installazioni.
 Il primo caricamento è più lungo dei successivi. Puoi salvare una partita da
 **Salva o riprendi una partita**; ricaricare la pagina senza salvarla ne inizia
-una nuova. Sul telefono la mano e la catena scorrono orizzontalmente.
+una nuova. Sul telefono la mano scorre orizzontalmente e il tavolo si adatta
+allo schermo. Il salvataggio conserva anche la disposizione delle tessere;
+le vecchie partite salvate si aprono con una disposizione automatica.

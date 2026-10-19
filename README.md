@@ -9,15 +9,15 @@ PC. Specifica originale: [CODEX_GAME_ENGINE_SPEC.md](CODEX_GAME_ENGINE_SPEC.md).
 
 La versione browser è realizzata e collaudata: usa lo stesso motore Python e la
 stessa CPU ai livelli 1–5, senza installazioni sul dispositivo del giocatore.
-Il sito è già preparato nel branch `gh-pages`; **l'attivazione di GitHub Pages
-non è ancora confermata**, perché l'accesso API da questa macchina restituisce 403.
+Il proprietario ha confermato l'attivazione di GitHub Pages e una partita giocata.
+**[Apri il gioco](https://adster2.github.io/Reto07-GameEngine/)**.
+La verifica HTTPS indipendente dalla macchina cloud resta bloccata dal proxy (403).
 
-Per attivarlo: [Settings → Pages](https://github.com/adster2/Reto07-GameEngine/settings/pages)
-→ **Deploy from a branch** → **gh-pages** → **/ (root)** → **Save**.
-Quando compare **Visit site**, aprirlo per giocare. L'indirizzo previsto è
-`https://adster2.github.io/Reto07-GameEngine/`; non viene presentato come già verificato.
-
-Nella pagina clicca una tessera disponibile, scegli la posa e premi **Conferma**.
+Nella pagina clicca una tessera disponibile e scegli il lato. Prima di premere
+**Conferma**, usa le frecce **Destra / Basso / Sinistra / Alto** per scegliere
+la direzione sul tavolo: la tessera evidenziata è ancora un'anteprima. La catena
+può curvare e le doppie si posano di traverso; S e D indicano le due estremità.
+Le direzioni senza spazio sono disabilitate. Il tavolo si adatta allo schermo.
 Conferma anche la proposta della CPU. I consigli per te sono facoltativi e
 inizialmente nascosti. Il primo caricamento richiede la connessione e qualche
 secondo per il motore Python; il gioco non richiede account o Python installato.
