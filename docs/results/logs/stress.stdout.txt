@@ -1,0 +1,1 @@
+{"games": 1000, "seed_start": 20000, "seed_end": 20999, "completed": 1000, "rule_violations": 0, "plies": 13126, "replays_verified": 1000}

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reto07-domino-engine"
+version = "0.1.0"
+description = "Offline double-six domino engine, fair strategy and virtual simulator"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+reto07 = "domino_engine.cli:main"
+reto07-gui = "domino_engine.gui:main"
+
+[tool.setuptools.packages.find]
+include = ["domino_engine*"]

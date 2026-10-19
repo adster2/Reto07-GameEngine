@@ -1,0 +1,188 @@
+{
+  "machine": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "processor": "unreported"
+  },
+  "search_config": {
+    "level": 3,
+    "samples": 8,
+    "max_nodes": 6000,
+    "time_limit_ms": 1500,
+    "seed": 20261019
+  },
+  "seed_start": 1000,
+  "seed_count": 25,
+  "groups": [
+    {
+      "level": 1,
+      "opponent": "random",
+      "games": 100,
+      "independent_deals": 25,
+      "wins": 60,
+      "draws": 2,
+      "losses": 38,
+      "score_rate": 0.61,
+      "approx_95_ci_deal_cluster": [
+        0.5235875587661128,
+        0.6964124412338871
+      ],
+      "rule_violations": 0,
+      "mean_plies": 13.18,
+      "elapsed_ms": 269.0332020010828
+    },
+    {
+      "level": 1,
+      "opponent": "greedy",
+      "games": 100,
+      "independent_deals": 25,
+      "wins": 57,
+      "draws": 2,
+      "losses": 41,
+      "score_rate": 0.58,
+      "approx_95_ci_deal_cluster": [
+        0.5001335072344686,
+        0.6598664927655313
+      ],
+      "rule_violations": 0,
+      "mean_plies": 13.04,
+      "elapsed_ms": 267.0992700001307
+    },
+    {
+      "level": 2,
+      "opponent": "random",
+      "games": 100,
+      "independent_deals": 25,
+      "wins": 64,
+      "draws": 1,
+      "losses": 35,
+      "score_rate": 0.645,
+      "approx_95_ci_deal_cluster": [
+        0.5581717787813202,
+        0.7318282212186799
+      ],
+      "rule_violations": 0,
+      "mean_plies": 13.32,
+      "elapsed_ms": 2322.849390000215
+    },
+    {
+      "level": 2,
+      "opponent": "greedy",
+      "games": 100,
+      "independent_deals": 25,
+      "wins": 54,
+      "draws": 7,
+      "losses": 39,
+      "score_rate": 0.575,
+      "approx_95_ci_deal_cluster": [
+        0.5184196736194167,
+        0.6315803263805833
+      ],
+      "rule_violations": 0,
+      "mean_plies": 13.32,
+      "elapsed_ms": 2326.389449999965
+    },
+    {
+      "level": 3,
+      "opponent": "random",
+      "games": 100,
+      "independent_deals": 25,
+      "wins": 63,
+      "draws": 2,
+      "losses": 35,
+      "score_rate": 0.64,
+      "approx_95_ci_deal_cluster": [
+        0.5490745176898504,
+        0.7309254823101496
+      ],
+      "rule_violations": 0,
+      "mean_plies": 13.17,
+      "elapsed_ms": 5091.6816229999995
+    },
+    {
+      "level": 3,
+      "opponent": "greedy",
+      "games": 100,
+      "independent_deals": 25,
+      "wins": 52,
+      "draws": 7,
+      "losses": 41,
+      "score_rate": 0.555,
+      "approx_95_ci_deal_cluster": [
+        0.47122098512554994,
+        0.6387790148744501
+      ],
+      "rule_violations": 0,
+      "mean_plies": 13.12,
+      "elapsed_ms": 5179.287330999841
+    },
+    {
+      "level": 4,
+      "opponent": "random",
+      "games": 100,
+      "independent_deals": 25,
+      "wins": 65,
+      "draws": 2,
+      "losses": 33,
+      "score_rate": 0.66,
+      "approx_95_ci_deal_cluster": [
+        0.5677636550304961,
+        0.752236344969504
+      ],
+      "rule_violations": 0,
+      "mean_plies": 12.92,
+      "elapsed_ms": 9205.62930299991
+    },
+    {
+      "level": 4,
+      "opponent": "greedy",
+      "games": 100,
+      "independent_deals": 25,
+      "wins": 53,
+      "draws": 6,
+      "losses": 41,
+      "score_rate": 0.56,
+      "approx_95_ci_deal_cluster": [
+        0.47859508614340296,
+        0.6414049138565971
+      ],
+      "rule_violations": 0,
+      "mean_plies": 12.73,
+      "elapsed_ms": 10497.845591999408
+    },
+    {
+      "level": 5,
+      "opponent": "random",
+      "games": 100,
+      "independent_deals": 25,
+      "wins": 65,
+      "draws": 2,
+      "losses": 33,
+      "score_rate": 0.66,
+      "approx_95_ci_deal_cluster": [
+        0.5793358195975438,
+        0.7406641804024563
+      ],
+      "rule_violations": 0,
+      "mean_plies": 12.94,
+      "elapsed_ms": 18554.78307000044
+    },
+    {
+      "level": 5,
+      "opponent": "greedy",
+      "games": 100,
+      "independent_deals": 25,
+      "wins": 54,
+      "draws": 3,
+      "losses": 43,
+      "score_rate": 0.555,
+      "approx_95_ci_deal_cluster": [
+        0.4559036327608323,
+        0.6540963672391678
+      ],
+      "rule_violations": 0,
+      "mean_plies": 12.98,
+      "elapsed_ms": 16838.744511000412
+    }
+  ]
+}

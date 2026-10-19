@@ -1,0 +1,1 @@
+{"seed": 42, "first": "OPPONENT", "assisted_bot": "ai5", "opponent_bot": "greedy", "winner": "ASSISTED", "reason": "empty_hand", "plies": 14, "passes": 1, "assisted_points": 0, "opponent_points": 5, "rule_violations": 0, "elapsed_ms": 122.26145199997518, "nodes": 2303, "samples": 56, "decisions": 7, "budget_limits": 0}

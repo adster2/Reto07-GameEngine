@@ -1,0 +1,60 @@
+{
+  "name": "ambiguous no transition",
+  "initial": {
+    "hands": [
+      [
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ]
+      ]
+    ]
+  },
+  "steps": [
+    {
+      "action": "observe",
+      "tiles": [],
+      "expect": {
+        "events": 0,
+        "pending_legal": null
+      }
+    },
+    {
+      "action": "observe",
+      "tiles": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "expect": {
+        "events": 0,
+        "pending_legal": null
+      }
+    },
+    {
+      "action": "observe",
+      "tiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "ambiguous": true,
+      "expect": {
+        "events": 0,
+        "pending_legal": null
+      }
+    }
+  ]
+}

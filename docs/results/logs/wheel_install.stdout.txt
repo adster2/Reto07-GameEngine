@@ -1,0 +1,7 @@
+Processing /workspace/Reto07-GameEngine/local_runs/dist/reto07_domino_engine-0.1.0-py3-none-any.whl
+Installing collected packages: reto07-domino-engine
+  Attempting uninstall: reto07-domino-engine
+    Found existing installation: reto07-domino-engine 0.1.0
+    Uninstalling reto07-domino-engine-0.1.0:
+      Successfully uninstalled reto07-domino-engine-0.1.0
+Successfully installed reto07-domino-engine-0.1.0

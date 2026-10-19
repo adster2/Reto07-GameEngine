@@ -1,0 +1,238 @@
+{
+  "code_commit": "61a4b0efedc958489eaf082acde84e57f1c573eb",
+  "cwd": "/workspace/Reto07-GameEngine",
+  "date_utc": "2026-10-19T13:02:42.344814+00:00",
+  "source_sha256": {
+    "domino_engine/__init__.py": "ee8ec193a0853e81ba9a73a8bd8a80fc18a03f38104b13ffa1661020f799ba4b",
+    "domino_engine/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "domino_engine/cli.py": "86d07c41cb9dfdcb9a0ed3f1a982de8d506d3f1a8c8a4741365746b3dc549f37",
+    "domino_engine/controller.py": "95153b3adda6abf30e2b43654c1cd3faaa735981f58c32ad00a61231accf9641",
+    "domino_engine/events.py": "0d672f5b9e156ed9c2ca8900a957fdebb59fb4796cad32ae51ce1a10846c03bb",
+    "domino_engine/experiments.py": "1cee4b4c2106b159bd55028b27f92c68d3ff4717ee68a89fa965f29ebba114bb",
+    "domino_engine/gui.py": "dbffef6bc7701ba191a113a923607948f3c5a16f7d5e94cba6a98b0da5175bb6",
+    "domino_engine/knowledge.py": "7f41a6bcde3fd8380fae1ad64b145420982fbdf229abdb63480874edcd2395b9",
+    "domino_engine/rules.py": "ebdc8aa882964c45aa07360c0f3297645658dea41612d29d89a00dd2ca172729",
+    "domino_engine/scenarios.py": "8cd30afbfee0f0c84a7ab97a4d2829c8722fc5f126103479f2f3202e0785ad14",
+    "domino_engine/simulation.py": "0b710dd758f5317954a55d2f6393deb529d0a955f0c044ca0ebb3ed91f30a9f0",
+    "domino_engine/state.py": "dd3253f88f3b2f2e3494337a3787f36e7f3573975fb65fa0f04c16fa42ecc5b5",
+    "domino_engine/strategy.py": "e70d154b3c01a245523f4eff95035f9ba91297fe5a2472079e4e607ecdfa6920",
+    "domino_engine/tiles.py": "cebbd194fca86e5d88d87b58278514b1fda4e167dd2391ebea4fc125e759613d"
+  },
+  "checks": [
+    {
+      "name": "unittest",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-v"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.0743698369999493,
+      "stdout": "logs/unittest.stdout.txt",
+      "stderr": "logs/unittest.stderr.txt"
+    },
+    {
+      "name": "cli_play",
+      "command": [
+        "python",
+        "-m",
+        "domino_engine",
+        "play",
+        "--seed",
+        "42",
+        "--assisted",
+        "ai5",
+        "--verbose",
+        "--save",
+        "local_runs/verified-game.json"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.17647092300012446,
+      "stdout": "logs/cli_play.stdout.txt",
+      "stderr": "logs/cli_play.stderr.txt"
+    },
+    {
+      "name": "cli_replay",
+      "command": [
+        "python",
+        "-m",
+        "domino_engine",
+        "replay",
+        "local_runs/verified-game.json"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.06597320399987439,
+      "stdout": "logs/cli_replay.stdout.txt",
+      "stderr": "logs/cli_replay.stderr.txt"
+    },
+    {
+      "name": "scenarios",
+      "command": [
+        "python",
+        "-m",
+        "domino_engine",
+        "scenario",
+        "scenarios/01.json",
+        "scenarios/02.json",
+        "scenarios/03.json",
+        "scenarios/04.json",
+        "scenarios/05.json",
+        "scenarios/06.json",
+        "scenarios/07.json",
+        "scenarios/08.json"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.07041699799992784,
+      "stdout": "logs/scenarios.stdout.txt",
+      "stderr": "logs/scenarios.stderr.txt"
+    },
+    {
+      "name": "gui_headless",
+      "command": [
+        "python",
+        "virtual_game.py",
+        "--headless-smoke",
+        "--level",
+        "5"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.4947529129999566,
+      "stdout": "logs/gui_headless.stdout.txt",
+      "stderr": "logs/gui_headless.stderr.txt"
+    },
+    {
+      "name": "gui_tk_level_1",
+      "command": [
+        "python",
+        "virtual_game.py",
+        "--smoke",
+        "--level",
+        "1",
+        "--seed",
+        "42"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.6610329239999828,
+      "stdout": "logs/gui_tk_level_1.stdout.txt",
+      "stderr": "logs/gui_tk_level_1.stderr.txt"
+    },
+    {
+      "name": "gui_tk_level_2",
+      "command": [
+        "python",
+        "virtual_game.py",
+        "--smoke",
+        "--level",
+        "2",
+        "--seed",
+        "42"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.71069598400004,
+      "stdout": "logs/gui_tk_level_2.stdout.txt",
+      "stderr": "logs/gui_tk_level_2.stderr.txt"
+    },
+    {
+      "name": "gui_tk_level_3",
+      "command": [
+        "python",
+        "virtual_game.py",
+        "--smoke",
+        "--level",
+        "3",
+        "--seed",
+        "42"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.7513578799998868,
+      "stdout": "logs/gui_tk_level_3.stdout.txt",
+      "stderr": "logs/gui_tk_level_3.stderr.txt"
+    },
+    {
+      "name": "gui_tk_level_4",
+      "command": [
+        "python",
+        "virtual_game.py",
+        "--smoke",
+        "--level",
+        "4",
+        "--seed",
+        "42"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.6938337219999084,
+      "stdout": "logs/gui_tk_level_4.stdout.txt",
+      "stderr": "logs/gui_tk_level_4.stderr.txt"
+    },
+    {
+      "name": "gui_tk_level_5",
+      "command": [
+        "python",
+        "virtual_game.py",
+        "--smoke",
+        "--level",
+        "5",
+        "--seed",
+        "42"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.8454502659999434,
+      "stdout": "logs/gui_tk_level_5.stdout.txt",
+      "stderr": "logs/gui_tk_level_5.stderr.txt"
+    },
+    {
+      "name": "stress",
+      "command": [
+        "python",
+        "-m",
+        "domino_engine",
+        "stress",
+        "--games",
+        "1000",
+        "--seed-start",
+        "20000",
+        "--output",
+        "docs/results/STRESS_RESULTS.csv"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 3.094316359000004,
+      "stdout": "logs/stress.stdout.txt",
+      "stderr": "logs/stress.stderr.txt"
+    },
+    {
+      "name": "benchmark",
+      "command": [
+        "python",
+        "-m",
+        "domino_engine",
+        "benchmark",
+        "--positions",
+        "150",
+        "--seed-start",
+        "30000",
+        "--output",
+        "docs/results/BENCHMARK_RESULTS.csv"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 8.767796348000047,
+      "stdout": "logs/benchmark.stdout.txt",
+      "stderr": "logs/benchmark.stderr.txt"
+    },
+    {
+      "name": "tournament_audit",
+      "command": [
+        "python",
+        "-m",
+        "domino_engine",
+        "audit",
+        "docs/results/TOURNAMENT_EVENTS.jsonl.gz"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 3.8567427250000037,
+      "stdout": "logs/tournament_audit.stdout.txt",
+      "stderr": "logs/tournament_audit.stderr.txt"
+    }
+  ]
+}

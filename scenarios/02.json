@@ -1,0 +1,94 @@
+{
+  "name": "wrong side and correction",
+  "initial": {
+    "hands": [
+      [
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    ],
+    "chain": [
+      [
+        3,
+        6
+      ]
+    ]
+  },
+  "steps": [
+    {
+      "action": "propose",
+      "move": {
+        "tile": [
+          1,
+          6
+        ],
+        "side": "LEFT",
+        "orientation": [
+          1,
+          6
+        ]
+      },
+      "expect": {
+        "pending_legal": false,
+        "chain": [
+          [
+            3,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "action": "correct",
+      "move": {
+        "tile": [
+          1,
+          6
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          6,
+          1
+        ]
+      },
+      "expect": {
+        "pending_legal": true
+      }
+    },
+    {
+      "action": "commit",
+      "expect": {
+        "chain": [
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "ends": [
+          3,
+          1
+        ]
+      }
+    }
+  ]
+}

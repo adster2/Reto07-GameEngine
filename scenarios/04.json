@@ -1,0 +1,65 @@
+{
+  "name": "blocked draw and pass inference",
+  "initial": {
+    "hands": [
+      [
+        [
+          0,
+          4
+        ]
+      ],
+      [
+        [
+          1,
+          3
+        ]
+      ]
+    ],
+    "chain": [
+      [
+        6,
+        6
+      ]
+    ]
+  },
+  "steps": [
+    {
+      "action": "propose",
+      "move": {
+        "pass": true
+      }
+    },
+    {
+      "action": "commit",
+      "expect": {
+        "passes": 1,
+        "terminal": false
+      }
+    },
+    {
+      "action": "propose",
+      "move": {
+        "pass": true
+      }
+    },
+    {
+      "action": "commit",
+      "expect": {
+        "terminal": true,
+        "winner": null,
+        "reason": "blocked",
+        "forbidden_opponent_values": [
+          6
+        ]
+      }
+    },
+    {
+      "action": "undo",
+      "expect": {
+        "terminal": false,
+        "passes": 1,
+        "forbidden_opponent_values": []
+      }
+    }
+  ]
+}

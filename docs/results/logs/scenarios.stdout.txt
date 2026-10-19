@@ -1,0 +1,8 @@
+{"scenario": "opening orientations and undo", "steps": 4, "passed": true}
+{"scenario": "wrong side and correction", "steps": 3, "passed": true}
+{"scenario": "misread 3-5 instead of 3-6", "steps": 3, "passed": true}
+{"scenario": "blocked draw and pass inference", "steps": 5, "passed": true}
+{"scenario": "blocked win no draw", "steps": 4, "passed": true}
+{"scenario": "double equal endpoints and immediate win", "steps": 2, "passed": true}
+{"scenario": "ambiguous no transition", "steps": 3, "passed": true}
+{"scenario": "extreme distribution", "steps": 2, "passed": true}

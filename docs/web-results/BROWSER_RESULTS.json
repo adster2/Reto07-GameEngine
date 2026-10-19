@@ -1,0 +1,60 @@
+{
+  "url": "http://127.0.0.1:8765/",
+  "browser": "Chromium",
+  "environment_tls": true,
+  "tls_verification_disabled": false,
+  "games": [
+    {
+      "level": 1,
+      "events": 13,
+      "winner": "OPPONENT",
+      "cpu_decisions": 7,
+      "terminal": true
+    },
+    {
+      "level": 2,
+      "events": 13,
+      "winner": "OPPONENT",
+      "cpu_decisions": 7,
+      "terminal": true
+    },
+    {
+      "level": 3,
+      "events": 13,
+      "winner": "OPPONENT",
+      "cpu_decisions": 7,
+      "terminal": true
+    },
+    {
+      "level": 4,
+      "events": 13,
+      "winner": "OPPONENT",
+      "cpu_decisions": 7,
+      "terminal": true
+    },
+    {
+      "level": 5,
+      "events": 13,
+      "winner": "OPPONENT",
+      "cpu_decisions": 7,
+      "terminal": true
+    },
+    {
+      "mobile": true,
+      "level": 2,
+      "events": 13,
+      "terminal": true,
+      "advice": true,
+      "save_load": true,
+      "discard": true,
+      "undo": true,
+      "new_game": true
+    }
+  ],
+  "page_errors": [],
+  "cpu_decisions": 42,
+  "cpu_p95_ms": 186.79999999999984,
+  "cpu_max_ms": 568.5999989999999,
+  "budget_limits": 0,
+  "wall_seconds": 46.67901978100008
+}

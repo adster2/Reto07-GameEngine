@@ -1,0 +1,9 @@
+PASS Doubles are transverse to the chain
+PASS Curves at both ends preserve face order and shared values
+PASS Space occupied by earlier tiles cannot be reused
+PASS Fourteen distinct public tiles fit with automatic bends
+PASS Replaying saved directions reconstructs the same coordinates
+PASS Undo removes a tile and passes add no graphical tile
+PASS Graphical selection does not mutate the public move or history
+PASS Malformed saved directions are ignored
+{"checks":8,"failed":0}

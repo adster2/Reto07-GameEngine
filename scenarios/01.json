@@ -1,0 +1,76 @@
+{
+  "name": "opening orientations and undo",
+  "initial": {
+    "hands": [
+      [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      [
+        [
+          4,
+          4
+        ]
+      ]
+    ]
+  },
+  "expect_initial": {
+    "legal_count": 3,
+    "ends": null
+  },
+  "steps": [
+    {
+      "action": "propose",
+      "move": {
+        "tile": [
+          1,
+          2
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          2,
+          1
+        ]
+      },
+      "expect": {
+        "pending_legal": true,
+        "events": 0
+      }
+    },
+    {
+      "action": "commit",
+      "expect": {
+        "chain": [
+          [
+            2,
+            1
+          ]
+        ],
+        "turn": "OPPONENT",
+        "hand_counts": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "action": "replay"
+    },
+    {
+      "action": "undo",
+      "expect": {
+        "chain": [],
+        "hand_counts": [
+          2,
+          1
+        ]
+      }
+    }
+  ]
+}
