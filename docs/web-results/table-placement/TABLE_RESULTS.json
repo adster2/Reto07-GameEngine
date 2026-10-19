@@ -1,0 +1,26 @@
+{
+  "browser": "Chromium",
+  "seed": 42,
+  "level": 3,
+  "completed_game": true,
+  "confirmed_events": 13,
+  "geometry_checks": 48,
+  "directions_tested": [
+    "down",
+    "left",
+    "right",
+    "up"
+  ],
+  "double_tiles": 2,
+  "save_load": true,
+  "undo": true,
+  "discard_preserves_layout": true,
+  "direction_preserves_referee": true,
+  "mobile_viewport": [
+    375,
+    812
+  ],
+  "page_errors": [],
+  "tls_verification_disabled": false,
+  "wall_seconds": 11.9922481589997
+}

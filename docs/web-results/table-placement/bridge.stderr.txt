@@ -1,0 +1,13 @@
+test_advice_all_legal_moves_and_json_protocol (tests.test_web_bridge.WebBridgeTests.test_advice_all_legal_moves_and_json_protocol) ... ok
+test_complete_games_all_five_levels_and_replay (tests.test_web_bridge.WebBridgeTests.test_complete_games_all_five_levels_and_replay) ... ok
+test_cpu_receives_only_knowledge (tests.test_web_bridge.WebBridgeTests.test_cpu_receives_only_knowledge) ... ok
+test_duplicate_confirm_and_stale_new_game_ids (tests.test_web_bridge.WebBridgeTests.test_duplicate_confirm_and_stale_new_game_ids) ... ok
+test_illegal_pending_correction_reread_and_undo (tests.test_web_bridge.WebBridgeTests.test_illegal_pending_correction_reread_and_undo) ... ok
+test_snapshot_never_exposes_referee_secrets (tests.test_web_bridge.WebBridgeTests.test_snapshot_never_exposes_referee_secrets) ... ok
+test_static_build_reuses_byte_identical_modules (tests.test_web_bridge.WebBridgeTests.test_static_build_reuses_byte_identical_modules) ... ok
+test_turn_level_and_load_validation_are_atomic (tests.test_web_bridge.WebBridgeTests.test_turn_level_and_load_validation_are_atomic) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.482s
+
+OK

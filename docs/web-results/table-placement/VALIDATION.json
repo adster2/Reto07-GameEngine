@@ -1,0 +1,17 @@
+{
+  "source_commit": "825ad490bd00c55559ffc65fcc17fd6aa1efb418",
+  "layout_checks": 8,
+  "bridge_tests": 8,
+  "browser_report": "TABLE_RESULTS.json",
+  "source_sha256": {
+    "web/table-layout.js": "f90a236af3ccbb1af8182c8491c40c40071d73388642094cfb9681f8277ebf6c",
+    "web/app.js": "f5e2b32f69fa314989694eb9d0d3242858aaa5ffc309da5faf4a8307eb569f47",
+    "web/index.html": "392f2788ae397b6aefdb7bc2cbae2bb62671ea919d219c8ef5206a6ec58a3cc0",
+    "web/style.css": "d791b1516b69c7b0dc98392e4507f5edbae5e37b3f5f38678b8f5a5f3ad1aba6",
+    "scripts/build_web.py": "fad090a8a36dc8588f0acbc3e3f4c2d8dc863184bba91c26bf1465b7c02c4e7e",
+    "scripts/test_table_layout.cjs": "f800af29d8fabf1ae200942abaf8ab2b795f1cd5ba99f325e8475615b778befc",
+    "scripts/test_table_browser.py": "4c708781f3aac9117ff595638216f6caeaf144a7a01642305eea83d7cef16864"
+  },
+  "public_https_verification": "BLOCKED: cloud proxy CONNECT 403; owner reports original site playable",
+  "new_engine_tournaments": "NOT_RUN: presentation-only update"
+}

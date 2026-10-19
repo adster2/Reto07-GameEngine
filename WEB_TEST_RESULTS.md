@@ -1,5 +1,36 @@
 # Risultati della versione browser — 19 ottobre 2026
 
+## Aggiornamento: curve e direzione della posa
+
+Sorgente collaudata: `825ad490bd00c55559ffc65fcc17fd6aa1efb418`.
+La modifica riguarda la presentazione del tavolo, senza cambiare regole o AI.
+
+| Verifica mirata | Risultato |
+|---|---|
+| Geometria JavaScript | **PASS**, 8 controlli: doppie trasversali, curve su entrambi gli estremi, collisioni, catena da 14 tessere, replay, passaggi, immutabilità e metadati non validi |
+| Regressione bridge Python | **PASS**, 8/8 test, zero skip |
+| Partita reale Chromium | **PASS**, seed 42, livello 3, 13 eventi confermati, CPU originale |
+| Direzioni e anteprima | **PASS**, quattro direzioni esercitate, 48 controlli geometrici, nessun cambiamento di token/vista/proposta scegliendo una direzione |
+| Recupero e annullamento | **PASS**, save/load conserva la disposizione; undo, scarto, vecchi salvataggi e nuova partita verificati |
+| Viewport 375×812 | **PASS**, tavolo ridimensionato senza sovrapposizioni, tessere tagliate o overflow della pagina |
+| Errori JavaScript | **PASS**, zero errori osservati |
+| Nuovi tornei del motore | **NOT_RUN**, non necessari per questa modifica del renderer |
+| Verifica HTTPS dell'aggiornamento pubblico | **BLOCKED**, il proxy cloud continua a restituire CONNECT 403 |
+
+Comandi eseguiti: `node scripts/test_table_layout.cjs`,
+`python -m unittest tests.test_web_bridge -v`, `python scripts/build_web.py`,
+`python scripts/test_table_browser.py --environment-tls`.
+Il runner usa una partita vera e i pulsanti dell'interfaccia; le prove geometriche
+isolate usano anche una catena pubblica controllata di 14 tessere distinte.
+Nessuna verifica TLS viene disattivata. Il telefono fisico resta **NOT_RUN**.
+
+[Report, hash sorgenti, log e schermate](docs/web-results/table-placement/VALIDATION.json).
+Il proprietario ha attivato Pages e confermato una partita nel sito originale;
+la verifica indipendente dell'aggiornamento dal cloud rimane distinta da questa
+conferma. Il report seguente conserva i risultati storici della prima consegna.
+
+## Consegna browser iniziale
+
 Codice sorgente: `7e073848c4182ff64fe76e8dc89bc157ecee83eb` sul branch
 `feat/domino-engine-simulator`. Il codice aggiunge un bridge JSON e una pagina
 web; le regole e l'algoritmo strategico già collaudati non sono duplicati o riscritti.
