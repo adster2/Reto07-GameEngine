@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "source_commit": "7e073848c4182ff64fe76e8dc89bc157ecee83eb",
+  "runtime": "https://cdn.jsdelivr.net/pyodide/v0.27.7/full/",
+  "files": [
+    {
+      "path": "domino_engine/__init__.py",
+      "sha256": "ee8ec193a0853e81ba9a73a8bd8a80fc18a03f38104b13ffa1661020f799ba4b"
+    },
+    {
+      "path": "domino_engine/tiles.py",
+      "sha256": "cebbd194fca86e5d88d87b58278514b1fda4e167dd2391ebea4fc125e759613d"
+    },
+    {
+      "path": "domino_engine/state.py",
+      "sha256": "dd3253f88f3b2f2e3494337a3787f36e7f3573975fb65fa0f04c16fa42ecc5b5"
+    },
+    {
+      "path": "domino_engine/rules.py",
+      "sha256": "ebdc8aa882964c45aa07360c0f3297645658dea41612d29d89a00dd2ca172729"
+    },
+    {
+      "path": "domino_engine/events.py",
+      "sha256": "0d672f5b9e156ed9c2ca8900a957fdebb59fb4796cad32ae51ce1a10846c03bb"
+    },
+    {
+      "path": "domino_engine/knowledge.py",
+      "sha256": "7f41a6bcde3fd8380fae1ad64b145420982fbdf229abdb63480874edcd2395b9"
+    },
+    {
+      "path": "domino_engine/strategy.py",
+      "sha256": "e70d154b3c01a245523f4eff95035f9ba91297fe5a2472079e4e607ecdfa6920"
+    },
+    {
+      "path": "domino_engine/simulation.py",
+      "sha256": "0b710dd758f5317954a55d2f6393deb529d0a955f0c044ca0ebb3ed91f30a9f0"
+    },
+    {
+      "path": "domino_engine/web_bridge.py",
+      "sha256": "496e72471bac7f60eeac6a81d86326120aae85c86ff4f008dbc930fd30789a74"
+    }
+  ]
+}
