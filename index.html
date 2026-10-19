@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <meta name="reto07-build" content="7e073848c4182ff64fe76e8dc89bc157ecee83eb">
+  <meta name="reto07-build" content="53b349bc82db48d44deeeed7df5d2c760755b787">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#173d35">
   <meta name="description" content="Sfida l'intelligenza artificiale di RETO 07 a domino doppio-sei. Cinque livelli, nessuna installazione.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <title>RETO 07 · Gioca a domino contro l'AI</title>
-  <link rel="stylesheet" href="style.css?v=7e073848c4182ff64fe76e8dc89bc157ecee83eb">
-  <script src="app.js?v=7e073848c4182ff64fe76e8dc89bc157ecee83eb" defer></script>
+  <link rel="stylesheet" href="style.css?v=53b349bc82db48d44deeeed7df5d2c760755b787">
+  <script src="table-layout.js?v=53b349bc82db48d44deeeed7df5d2c760755b787" defer></script>
+  <script src="app.js?v=53b349bc82db48d44deeeed7df5d2c760755b787" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -26,13 +27,14 @@
         <div class="cpu-zone"><div class="player-label"><span class="avatar">CPU</span><div><strong>Il tuo avversario</strong><span id="cpu-count">7 tessere</span></div></div><div id="cpu-hand" class="cpu-hand" aria-label="Tessere coperte della CPU"></div></div>
         <div class="ends"><span>ESTREMO SINISTRO <strong id="left-end">—</strong></span><span>ESTREMO DESTRO <strong id="right-end">—</strong></span></div>
         <div id="chain" class="chain" aria-label="Catena delle tessere sul tavolo"><p class="empty-board">Il tavolo è pronto.<br><span>Chi inizia può giocare qualsiasi tessera.</span></p></div>
+        <p id="table-hint" class="table-hint">Le doppie si posano di traverso. La catena può curvare.</p>
         <div class="table-footer"><span>DOPPIO SEI · NESSUNA PESCA</span><span id="ply-count">0 mosse confermate</span></div>
       </div>
       <div id="result" class="result-card" role="status" hidden><p class="eyebrow">MANCHE CONCLUSA</p><h2 id="result-title"></h2><p id="result-text"></p><button class="button primary" id="play-again">Giochiamo ancora</button></div>
-      <section class="proposal-card" id="proposal" hidden aria-label="Conferma della mossa"><div id="proposal-tile"></div><div class="proposal-copy"><p class="eyebrow" id="proposal-actor"></p><h2 id="proposal-title"></h2><p id="proposal-detail"></p></div><div class="proposal-actions"><button id="confirm" class="button primary">Conferma mossa</button><button id="discard" class="button subtle">Scarta</button></div></section>
+      <section class="proposal-card" id="proposal" hidden aria-label="Conferma della mossa"><div id="proposal-tile"></div><div class="proposal-copy"><p class="eyebrow" id="proposal-actor"></p><h2 id="proposal-title"></h2><p id="proposal-detail"></p><div id="pose-controls" class="pose-controls" role="group" aria-label="Direzione della posa sul tavolo" hidden></div></div><div class="proposal-actions"><button id="confirm" class="button primary">Conferma mossa</button><button id="discard" class="button subtle">Scarta</button></div></section>
       <section class="hand-card"><div class="section-heading"><div><h2>La tua mano</h2><p id="hand-hint">Scegli una tessera per vedere dove puoi giocarla.</p></div><span id="your-points" class="points"></span></div><div id="hand" class="hand" aria-label="Le tue tessere"></div><div class="hand-actions"><button id="pass" class="button" disabled>Passa il turno</button><button id="cpu-play" class="button" hidden>Fai muovere la CPU</button><label class="advice-toggle"><input type="checkbox" id="show-advice"> Mostra i consigli dell'AI</label></div></section>
       <section id="advice" class="advice-card" hidden><div class="section-heading"><h2>Uno sguardo alla strategia</h2><span class="muted">Punteggi di utilità, non probabilità di vittoria</span></div><div id="ranking"></div></section>
-      <div class="lower-grid"><details class="info-card" open><summary>Come si gioca?</summary><ol><li>Clicca una tua tessera disponibile e scegli una posa.</li><li>Premi <strong>Conferma mossa</strong> per metterla sul tavolo.</li><li>La CPU pensa e propone la sua tessera. Conferma anche quella.</li><li>Si passa solo se nessuna tessera è giocabile. Non si pesca.</li><li>Vince chi finisce le tessere. Due passaggi bloccano la partita: vince chi ha meno punti in mano.</li></ol></details><details class="info-card"><summary>Cronologia della partita</summary><ol id="history" class="history"></ol></details><details class="info-card"><summary>Salva o riprendi una partita</summary><p>Puoi salvare una partita sul tuo dispositivo e riprenderla in seguito. Il file include i dati dell'arbitro, comprese le mani.</p><div class="inline-actions"><button id="save-game" class="button">Salva partita</button><button id="load-game" class="button">Riprendi da file</button><input id="load-file" type="file" accept="application/json,.json" hidden></div><p class="muted">Se ricarichi la pagina senza salvare, la partita in corso viene sostituita.</p></details><details class="info-card"><summary>Cosa ha calcolato l'AI?</summary><p>L'AI vede soltanto la propria mano, il tavolo e le mosse già osservate. Non conosce le tue tessere.</p><p id="diagnostics">Il calcolo comparirà dopo una decisione.</p></details></div>
+      <div class="lower-grid"><details class="info-card" open><summary>Come si gioca?</summary><ol><li>Clicca una tua tessera disponibile e scegli una posa.</li><li>Prima di confermare, usa le frecce per continuare dritto o far curvare la catena. La tessera evidenziata è un'anteprima; le doppie si posano di traverso.</li><li>Premi <strong>Conferma mossa</strong> per metterla sul tavolo. La CPU pensa e propone la sua tessera: conferma anche quella.</li><li>Si passa solo se nessuna tessera è giocabile. Non si pesca. Puoi giocare soltanto alle due estremità, indicate da S e D.</li><li>Vince chi finisce le tessere. Due passaggi bloccano la partita: vince chi ha meno punti in mano.</li></ol></details><details class="info-card"><summary>Cronologia della partita</summary><ol id="history" class="history"></ol></details><details class="info-card"><summary>Salva o riprendi una partita</summary><p>Puoi salvare una partita sul tuo dispositivo e riprenderla in seguito. Il file include i dati dell'arbitro, comprese le mani, e conserva la disposizione del tavolo.</p><div class="inline-actions"><button id="save-game" class="button">Salva partita</button><button id="load-game" class="button">Riprendi da file</button><input id="load-file" type="file" accept="application/json,.json" hidden></div><p class="muted">Se ricarichi la pagina senza salvare, la partita in corso viene sostituita.</p></details><details class="info-card"><summary>Cosa ha calcolato l'AI?</summary><p>L'AI vede soltanto la propria mano, il tavolo e le mosse già osservate. Non conosce le tue tessere.</p><p id="diagnostics">Il calcolo comparirà dopo una decisione.</p></details></div>
     </section>
   </main>
   <footer><span>RETO 07 · Un solo motore, dalla simulazione alla futura telecamera.</span><span>Nessun account. Nessuna installazione.</span></footer>
