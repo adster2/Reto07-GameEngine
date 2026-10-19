@@ -25,6 +25,15 @@ class PublicEvent:
     move: Move
     ends_before: tuple[int, int] | None = None
 
+    def __post_init__(self):
+        if not isinstance(self.player, Player) or not isinstance(self.move, Move):
+            raise ValueError("Invalid public event")
+        if self.ends_before is not None:
+            ends = tuple(self.ends_before)
+            if len(ends) != 2 or any(type(v) is not int or not 0 <= v <= 6 for v in ends):
+                raise ValueError("Invalid historical endpoints")
+            object.__setattr__(self, 'ends_before', ends)
+
     def to_dict(self):
         return {"player": self.player.value, "move": self.move.to_dict(),
                 "ends_before": list(self.ends_before) if self.ends_before else None}
@@ -47,6 +56,13 @@ class GameState:
     winner: Player | None = None
     reason: str | None = None
     seed: int | None = None
+
+    def __post_init__(self):
+        # Freeze even collections supplied by a manual/third-party constructor.
+        object.__setattr__(self, 'hands', tuple(tuple(h) for h in self.hands))
+        object.__setattr__(self, 'excluded', tuple(self.excluded))
+        object.__setattr__(self, 'chain', tuple(self.chain))
+        object.__setattr__(self, 'history', tuple(self.history))
 
     def hand(self, player):
         return self.hands[player.index]
@@ -145,6 +161,8 @@ def validate_state(state, *, check_history=False):
     empty = [p for p in Player if not state.hand(p)]
     if len(empty) > 1:
         raise ValueError("Both hands empty")
+    if empty and state.passes:
+        raise ValueError("An empty-hand victory cannot follow a pass")
     expected_reason = "empty_hand" if empty else "blocked" if state.passes == 2 else None
     expected_winner = empty[0] if empty else blocked_winner(state.hands) if state.passes == 2 else None
     if (state.terminal != (expected_reason is not None) or state.reason != expected_reason

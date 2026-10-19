@@ -118,3 +118,17 @@ class RulesTests(unittest.TestCase):
     def test_no_draw_distribution_bounds(self):
         with self.assertRaises(ValueError):
             from_hands(ALL_TILES[:8], ALL_TILES[8:15])
+
+    def test_empty_hand_cannot_follow_pass_and_collections_are_frozen(self):
+        with self.assertRaises(ValueError):
+            from_hands([], [Tile(1, 1)], chain=[OrientedTile(6, 6)], passes=2)
+        s = deal(1)
+        hands = [list(h) for h in s.hands]
+        mutable = replace(s, hands=hands)
+        hands[0].clear()
+        self.assertEqual(mutable, s)
+        from domino_engine.state import PublicEvent
+        ends = [1, 2]
+        event = PublicEvent(Player.ASSISTED, Move(), ends)
+        ends[0] = 6
+        self.assertEqual(event.ends_before, (1, 2))
