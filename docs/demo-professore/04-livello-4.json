@@ -1,0 +1,184 @@
+{
+  "context": "Selettore originale della CPU impostato sul livello 4; stessa mano e zero eventi.",
+  "seed": 43,
+  "captured_at_utc": "2026-11-06T11:47:58.538072+00:00",
+  "state": {
+    "view": {
+      "observer": "ASSISTED",
+      "hand": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "chain": [],
+      "turn": "ASSISTED",
+      "opponent_count": 7,
+      "passes": 0,
+      "history": [],
+      "terminal": false,
+      "winner": null,
+      "reason": null,
+      "rules": "double-six;7-per-player;14-excluded;no-draw;two-passes-block"
+    },
+    "ends": null,
+    "legal_moves": [
+      {
+        "tile": [
+          1,
+          1
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          1,
+          1
+        ]
+      },
+      {
+        "tile": [
+          1,
+          6
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          1,
+          6
+        ]
+      },
+      {
+        "tile": [
+          1,
+          6
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          6,
+          1
+        ]
+      },
+      {
+        "tile": [
+          3,
+          3
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          3,
+          3
+        ]
+      },
+      {
+        "tile": [
+          3,
+          5
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          3,
+          5
+        ]
+      },
+      {
+        "tile": [
+          3,
+          5
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          5,
+          3
+        ]
+      },
+      {
+        "tile": [
+          3,
+          6
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          3,
+          6
+        ]
+      },
+      {
+        "tile": [
+          3,
+          6
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          6,
+          3
+        ]
+      },
+      {
+        "tile": [
+          4,
+          5
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          4,
+          5
+        ]
+      },
+      {
+        "tile": [
+          4,
+          5
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          5,
+          4
+        ]
+      },
+      {
+        "tile": [
+          6,
+          6
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          6,
+          6
+        ]
+      }
+    ],
+    "pending": null,
+    "token": "5:0",
+    "level": 4,
+    "result": null,
+    "event_count": 0,
+    "ranking": [],
+    "advice_diagnostics": null,
+    "cpu_diagnostics": null
+  },
+  "selected_level": "4",
+  "advice_visible": false,
+  "result_text": null
+}

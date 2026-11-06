@@ -1,0 +1,136 @@
+{
+  "context": "Partita in corso: catena confermata, estremi, nostra mano e avversario con tessere coperte.",
+  "seed": 43,
+  "captured_at_utc": "2026-11-06T11:47:59.557485+00:00",
+  "state": {
+    "view": {
+      "observer": "ASSISTED",
+      "hand": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "chain": [
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "turn": "ASSISTED",
+      "opponent_count": 6,
+      "passes": 0,
+      "history": [
+        {
+          "player": "ASSISTED",
+          "move": {
+            "tile": [
+              6,
+              6
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              6,
+              6
+            ]
+          },
+          "ends_before": null
+        },
+        {
+          "player": "OPPONENT",
+          "move": {
+            "tile": [
+              2,
+              6
+            ],
+            "side": "LEFT",
+            "orientation": [
+              2,
+              6
+            ]
+          },
+          "ends_before": [
+            6,
+            6
+          ]
+        }
+      ],
+      "terminal": false,
+      "winner": null,
+      "reason": null,
+      "rules": "double-six;7-per-player;14-excluded;no-draw;two-passes-block"
+    },
+    "ends": [
+      2,
+      6
+    ],
+    "legal_moves": [
+      {
+        "tile": [
+          1,
+          6
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          6,
+          1
+        ]
+      },
+      {
+        "tile": [
+          3,
+          6
+        ],
+        "side": "RIGHT",
+        "orientation": [
+          6,
+          3
+        ]
+      }
+    ],
+    "pending": null,
+    "token": "7:2",
+    "level": 3,
+    "result": null,
+    "event_count": 2,
+    "ranking": [],
+    "advice_diagnostics": null,
+    "cpu_diagnostics": {
+      "requested_depth": 3,
+      "completed_depth": 3,
+      "deepest_visited": 3,
+      "nodes": 230,
+      "samples": 8,
+      "elapsed_ms": 33.7999989999993,
+      "budget_exhausted": false,
+      "limit": null
+    }
+  },
+  "selected_level": "3",
+  "advice_visible": false,
+  "result_text": null
+}

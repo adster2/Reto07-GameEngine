@@ -1,0 +1,1163 @@
+{
+  "status": "PASS",
+  "capture_started_at_utc": "2026-11-06T11:47:49.661822+00:00",
+  "capture_finished_at_utc": "2026-11-06T11:48:03.327355+00:00",
+  "display_timezone": "Europe/Madrid",
+  "approved_tag": "consegna-v1.0",
+  "approved_source_commit": "53b349bc82db48d44deeeed7df5d2c760755b787",
+  "build_source_commit": "9f3348b4d09dfcaad64dfbe8a17f21465bb783bd",
+  "capture_script_sha256": "3ac2ded6fe9e171d97195231e5bb128e899dd6d240eca73d1a41e29abbbb591f",
+  "approved_files_byte_identical_before_and_after": 133,
+  "approved_file_sha256": {
+    ".gitignore": "5b5a3c1df1e56c7aa5d86b24f52e46bac3c37fabfee4fc7ac7e1224e9cb3279e",
+    "CODEX_GAME_ENGINE_SPEC.md": "be10392a278c240f21d5f96143b48bc213f5fad6d7978b76f42c5f14446b1731",
+    "GAME_ENGINE_DESIGN.md": "5c882cc9d3228845df419ef73e0fb9433350884c2d3f2388852cbe690cb812b9",
+    "GAME_ENGINE_TEST_PLAN.md": "28901e952eaf5f9512166b01cd62404db8982a09ddb62c60051275107302f1fd",
+    "GUIDA_GITHUB.md": "d69372ce15ecc186236f8b8af0c7b461c70cb7a23a2dac4f262d5367f796c320",
+    "PROJECT_STATUS.md": "08f86ea3d8e1820c56352edfda7fef043aef94e9957dc0282a5f53f16555e33b",
+    "README.md": "da52317acefeed78596f5cf2f7df49e701f081da1bd06915f6f4049c08b5f0ea",
+    "TEST_RESULTS.md": "41b4f9a40e35ec23cd4f822a3687980273486c0fe94bfbdc112bc775937e754d",
+    "VISION_INTEGRATION_CONTRACT.md": "e37bb77ddc237d28474312dc81de451f944d7e92d2f7de9dc1385da62ca7760e",
+    "WEB_DEPLOYMENT.md": "0db235e85a4df5e25069ffd996a21541520c893c62f9d6f97df2fc9ca081212e",
+    "WEB_TEST_RESULTS.md": "d6abc73721ee446e7ceb27932a747c411ec05fc3cf0d5a63392d41145d10e13d",
+    "docs/HEADLESS_TESTING.md": "aa94283a014cd76879a910c6eb4f5b3be7d42474f9eec60e4d36d197a3d656bc",
+    "docs/PULL_REQUEST.md": "69657b0b76cca2719c20e2654a879e93cd531dec1d5435a7fda94d176c4162a6",
+    "docs/gui-linux.png": "55a5bdf3688d035d97604129aa42350dc0d6b76b98624f77630e254e04d6a0c7",
+    "docs/results/BENCHMARK_RESULTS.csv": "25cd4a52c9ac1d8279dfd91596887546d241eb1e3a09a6ddbff714864b4d2112",
+    "docs/results/BENCHMARK_RESULTS.json": "b0db7428c886808fd76d123da1d59bf5c5b412ca3bea5a3da9f824472ef9a3b2",
+    "docs/results/EVIDENCE_INTEGRITY.json": "ea982eaabeeb14b0f7cf3c234984b9f5cb18f8ccd39b6c321e53a43822d5a7f6",
+    "docs/results/GITHUB_DELIVERY.json": "fc126316b101ad67d808b5f0104d7724125d3f97a054dbf70b53fb0a41262166",
+    "docs/results/PACKAGING_VALIDATION.json": "e4bbf80bf7d0aad180bb0755dc1d8a53479cff41eb4682aa905603b69d41b4b9",
+    "docs/results/README.md": "c29b283a8e4c7b19be277e600009f026b00f064652b3e338188ce55f9851103c",
+    "docs/results/SHA256SUMS.json": "ead4aedf9238436fa7360e20d90fb3196b9880ce01565a86e26557fbbc835e61",
+    "docs/results/STRESS_RESULTS.csv": "66bfcde56641c5da5f0e479ba4e441afc5322f425efdbff915120ad1ce600714",
+    "docs/results/TOURNAMENT_DECISIONS.csv": "18686bb3a0edae1bfd24f422a1b3e522f5be74216cc7f34ede00600415275305",
+    "docs/results/TOURNAMENT_EVENTS.jsonl.gz": "77c5d8a2e73a7aee09f032729dba2193f7ab9a2f2de369d484bc93c4ee791c26",
+    "docs/results/TOURNAMENT_RESULTS.csv": "4dec538496b6382b778a114ae2326377e544dd672d86d357e1c4703c43f97385",
+    "docs/results/TOURNAMENT_SUMMARY.json": "b9bfbd480c100567556ffa53742f41d27eb43ffad86020b302384c2542841ef7",
+    "docs/results/VALIDATION_RUN.json": "365c42a93172dd57dbdcb615fc461ba2ae14873ca526508cefbbbf94c18bfbab",
+    "docs/results/development/TOURNAMENT_RESULTS.csv": "9faa0aaf4e4616a69fb9482652616126ecb56cbeff4243baf72538fec9ee6b9d",
+    "docs/results/development/TOURNAMENT_SUMMARY.json": "c4504c2da0e0000bd1586f2a3c66540e633f231e0b92e48fd72c82cde4856fed",
+    "docs/results/logs/benchmark.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/benchmark.stdout.txt": "3e445843f06eddff470a509726fb524df4434f069cdbe3f49fa491ce4248f5ce",
+    "docs/results/logs/cli_play.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/cli_play.stdout.txt": "704e78555e5933c6ef65641fea780c47b1eb01e0a55c72b685a6e45d82c409ba",
+    "docs/results/logs/cli_replay.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/cli_replay.stdout.txt": "5a3ec1cc768839e272fd4b8b5de9a051779a5b4657f0e85afa291d07dab576b2",
+    "docs/results/logs/git_push.stderr.txt": "3f1df4b382b61749ae4488d996efc2699fc9339128615260b60c8f703870b5bb",
+    "docs/results/logs/git_push.stdout.txt": "59b3be9ccf4ba019a7d62f1b3735f8620993a9421e800f85543a9a68f0f54dc1",
+    "docs/results/logs/gui_headless.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/gui_headless.stdout.txt": "5e09c8c6f14f861ea41f47074999a730e3ae34922e194ff4ceae2f094b08918f",
+    "docs/results/logs/gui_tk_level_1.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/gui_tk_level_1.stdout.txt": "d9cec2979d3c061080fbde77ee302d0ec4ea5844553285001707df1045c982e1",
+    "docs/results/logs/gui_tk_level_2.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/gui_tk_level_2.stdout.txt": "78f75d4b8716757b08f0cb76dee60c53f2ee2150513b0e7990b70683fab531b2",
+    "docs/results/logs/gui_tk_level_3.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/gui_tk_level_3.stdout.txt": "319d0f2137437b11777c425779294e14cbc2b0500ef9a0ebc107894208bdfb90",
+    "docs/results/logs/gui_tk_level_4.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/gui_tk_level_4.stdout.txt": "45130393f6feeacbda04b5d690700af6c9281088c61cf82282d1c59c0914f510",
+    "docs/results/logs/gui_tk_level_5.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/gui_tk_level_5.stdout.txt": "3c3e647b3e6793f820d24a165ccd85416e9d8897ff5b0aa4790f6fa2e490bbb8",
+    "docs/results/logs/pull_request.stderr.txt": "767e5daa74e88bccc6f64e743483c8bc41a83379e109d3c90cb4a693b5619930",
+    "docs/results/logs/pull_request.stdout.txt": "bb0dde2ce1bbe22a82d1cd75fcd56b4e4031a17bc32c826b751173a5952b6fa5",
+    "docs/results/logs/scenarios.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/scenarios.stdout.txt": "8165f55a8da9289a8aed843c97a516fd69894d5b206c661b90ec911180d29594",
+    "docs/results/logs/stress.stderr.txt": "d68836d9b94e2a64fc3f5e7527a0122124d40416634803a8f59e695ff5691c99",
+    "docs/results/logs/stress.stdout.txt": "1bf25513fbe4ba4a055377650f37f1f7b2fa5c557fd3b798da3ee8664781e991",
+    "docs/results/logs/tournament_audit.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/tournament_audit.stdout.txt": "2872298010ac238c30d7a9ded61b1c67ffd2e9b5b61f1755df23ed25c3084fdd",
+    "docs/results/logs/unittest.stderr.txt": "f4439e3886934c1695e5d3f66fb49ff160458a8bf4b35dc8dc11749f25393459",
+    "docs/results/logs/unittest.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/wheel_cli.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/wheel_cli.stdout.txt": "8c7886020b3c2478b436cfdc2a00e8ba6ccda527b0e3aabda3816c61901cfa6b",
+    "docs/results/logs/wheel_headless.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/wheel_headless.stdout.txt": "5e09c8c6f14f861ea41f47074999a730e3ae34922e194ff4ceae2f094b08918f",
+    "docs/results/logs/wheel_install.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/wheel_install.stdout.txt": "cab35b3b242223edc92f06cdb505eba39427dc4398d9cf5c21ee3da8052c45eb",
+    "docs/results/logs/wheel_origin.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/wheel_origin.stdout.txt": "186af25b54c30a42a55e2b7a6233efb12fbc9e745266c1eda5451b464ad2ec37",
+    "docs/results/logs/wheel_tk.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/results/logs/wheel_tk.stdout.txt": "3c3e647b3e6793f820d24a165ccd85416e9d8897ff5b0aa4790f6fa2e490bbb8",
+    "docs/testing-xorg.conf": "f3257f9d3f24eb382877a34d2c7a76b2786d7296216a0db418f567820e44e7c3",
+    "docs/web-results/BROWSER_RESULTS.json": "fc962654a9e6c6aa2223bc214adb0824692fb0cfc14d4e490d7000f22fc65b26",
+    "docs/web-results/PAGES_DEPLOYMENT.json": "c955957aca48449035aaebdba12b4c1aab3f917aac955a05c587ee8da189da2c",
+    "docs/web-results/WEB_STRESS.csv": "8af096b6c3ea6ab1ec05538fbeb265340ff2a32565b895f52f4009f2bddf5572",
+    "docs/web-results/WEB_STRESS.json": "0162d8675938586649ea6600e134756fd893aae363d2b926f0dc331b35f62393",
+    "docs/web-results/desktop.png": "92ea1b0a49a5884f147e115912e0c0aa122e21b84c94f3bd5b9d71ee5b481fd0",
+    "docs/web-results/mobile.png": "dcc4a4ee7279c64f10d231f1f2fd943bb716649d8de9e0eb8b13daef17fabb49",
+    "docs/web-results/table-placement/TABLE_RESULTS.json": "a4905dfa2d9999085126bf01d95abd3bc57026eb7a2f251392bb90457a2ece92",
+    "docs/web-results/table-placement/VALIDATION.json": "b8721116c09808026f8b797beb8c6d8798e88d83c89bfab8a04589e6abd868b8",
+    "docs/web-results/table-placement/bridge.stderr.txt": "8845b4d534a8d60e68ee975101f5588a606ae62a5ce31b392cc35ea4cd9ae887",
+    "docs/web-results/table-placement/bridge.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/web-results/table-placement/desktop-curves.png": "314e5a324ff5dd4fffc785de29a8213bcf69ced3a7e503907f4b7176acce0878",
+    "docs/web-results/table-placement/layout.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/web-results/table-placement/layout.stdout.txt": "e7e66afa509a1a1225656936620298f77abddad7c72d68700ccb450cbddd37fb",
+    "docs/web-results/table-placement/mobile-curves.png": "a5895a1f56e0378de9b3d60b4eda31d365faca1ae4014ee29a050dae1aad7708",
+    "docs/web-results/table-placement/pending-curve.png": "f10e06ad610bd5c970a72015045c0764f3a75b1807e280b143df8215fe37723b",
+    "docs/web-results/unit.stderr.txt": "090909a9de6a87c4cac6be8bdae83eeec7ed93ca1e8066723e1085d9ce7fc47a",
+    "docs/web-results/unit.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "domino_engine/__init__.py": "ee8ec193a0853e81ba9a73a8bd8a80fc18a03f38104b13ffa1661020f799ba4b",
+    "domino_engine/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "domino_engine/cli.py": "86d07c41cb9dfdcb9a0ed3f1a982de8d506d3f1a8c8a4741365746b3dc549f37",
+    "domino_engine/controller.py": "95153b3adda6abf30e2b43654c1cd3faaa735981f58c32ad00a61231accf9641",
+    "domino_engine/events.py": "0d672f5b9e156ed9c2ca8900a957fdebb59fb4796cad32ae51ce1a10846c03bb",
+    "domino_engine/experiments.py": "1cee4b4c2106b159bd55028b27f92c68d3ff4717ee68a89fa965f29ebba114bb",
+    "domino_engine/gui.py": "dbffef6bc7701ba191a113a923607948f3c5a16f7d5e94cba6a98b0da5175bb6",
+    "domino_engine/knowledge.py": "7f41a6bcde3fd8380fae1ad64b145420982fbdf229abdb63480874edcd2395b9",
+    "domino_engine/rules.py": "ebdc8aa882964c45aa07360c0f3297645658dea41612d29d89a00dd2ca172729",
+    "domino_engine/scenarios.py": "8cd30afbfee0f0c84a7ab97a4d2829c8722fc5f126103479f2f3202e0785ad14",
+    "domino_engine/simulation.py": "0b710dd758f5317954a55d2f6393deb529d0a955f0c044ca0ebb3ed91f30a9f0",
+    "domino_engine/state.py": "dd3253f88f3b2f2e3494337a3787f36e7f3573975fb65fa0f04c16fa42ecc5b5",
+    "domino_engine/strategy.py": "e70d154b3c01a245523f4eff95035f9ba91297fe5a2472079e4e607ecdfa6920",
+    "domino_engine/tiles.py": "cebbd194fca86e5d88d87b58278514b1fda4e167dd2391ebea4fc125e759613d",
+    "domino_engine/web_bridge.py": "496e72471bac7f60eeac6a81d86326120aae85c86ff4f008dbc930fd30789a74",
+    "pyproject.toml": "fa6ee89458ff0fb1bdd2123292610e673741f41b8f65ad1b4b6cf94c600a3754",
+    "run_simulator.cmd": "5e464680e53d6ccc466dc47124b7e5e0e29f8cb88088890a63e15d97d22ca14d",
+    "scenarios/01.json": "845317b1dae470a8f8cc920a88fbaf99f11e4af5b6688084969eb574ad940a4c",
+    "scenarios/02.json": "70e297d7668a9c54bc06f6b8e39271bbd85672bd9b062c35f7186ff5908c74f3",
+    "scenarios/03.json": "3022bf54347d92eacfc8a43be36ae3d0c72668e5fd96ee568ee497cbb46b82b1",
+    "scenarios/04.json": "a349cf26e817cbebced82d14cedd9fb00b50a6eee48e0d6151f095bfc50804dc",
+    "scenarios/05.json": "566c7122a35f11412d146a5c5f004ef1ccb8ff07d106189a54b9074b0ee9d203",
+    "scenarios/06.json": "2299a3fa202efa0cd1ac5ea8599601f80b9f4a98df723004b990300100dca1c1",
+    "scenarios/07.json": "521d157b6b08e41f08a9e0ca6d686d26af6324da17cdd583e644523db3b487e1",
+    "scenarios/08.json": "99f6ab300965cc94959ed18c41b62dd6bbb0922be361fd07ec676f5af78ae5a1",
+    "scripts/build_web.py": "fad090a8a36dc8588f0acbc3e3f4c2d8dc863184bba91c26bf1465b7c02c4e7e",
+    "scripts/publish_web.py": "456f2f802f02e7c1a95f6208ec6deb51e68ba9c59794acd72fa0c6b77505b97f",
+    "scripts/stress_web.py": "78f06058e2eb2faaf11275888695d5136161e70cefc006ec6a419985ed071539",
+    "scripts/test_table_browser.py": "4c708781f3aac9117ff595638216f6caeaf144a7a01642305eea83d7cef16864",
+    "scripts/test_table_layout.cjs": "f800af29d8fabf1ae200942abaf8ab2b795f1cd5ba99f325e8475615b778befc",
+    "scripts/test_web_browser.py": "5be87cfc931bab42e1788bda5674caf1172e316defd7fb9d2c37306daff30e36",
+    "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/test_controller.py": "7778497738268e39a9fa9ce981bf42732d04486556a0b819f577e4ad71907b6b",
+    "tests/test_events.py": "74dad4d966ce39a4e0980ffb609df1c8c155593224fa2789c2bec9b334c730a8",
+    "tests/test_knowledge_strategy.py": "c5f4d13fe12bf7733502cd3cbe9e3c35b954e4c0e4639ba196ba899369d3ee52",
+    "tests/test_rules.py": "24ae1edf05e510fd323392e032c9f17df89bac371e629278763f85a9774c64ca",
+    "tests/test_scenarios_cli.py": "c65d71e17d7d1ac2875a0418687c0258a01984439536a29af8517e942e50a031",
+    "tests/test_tk_gui.py": "b122bd4d47a842a0631fe39941d4f5cee1828a22a08c64d9ec3bcc395cd5ad22",
+    "tests/test_web_bridge.py": "532f86c4d4e3231e9d97498bd0f3921e2356c785eda647735a5fb5eaf69f4b9e",
+    "virtual_game.py": "376614de98a1b58f25197bc307de23dd42c12d335feac20bc93f4c1ef7ec48cf",
+    "web/app.js": "f5e2b32f69fa314989694eb9d0d3242858aaa5ffc309da5faf4a8307eb569f47",
+    "web/favicon.svg": "4aa75df0af4d84ca9f1ea8718d0b1a10cd617318008e1ed9a0dbf7506d327244",
+    "web/index.html": "392f2788ae397b6aefdb7bc2cbae2bb62671ea919d219c8ef5206a6ec58a3cc0",
+    "web/style.css": "d791b1516b69c7b0dc98392e4507f5edbae5e37b3f5f38678b8f5a5f3ad1aba6",
+    "web/table-layout.js": "f90a236af3ccbb1af8182c8491c40c40071d73388642094cfb9681f8277ebf6c",
+    "web/worker.js": "b65c9a45ea212f2efd991fa8c50de1df85bd2ccbeb7b71a193819c22eb1a0d92"
+  },
+  "source": "Local build of the delivered browser simulator; not the public deployed site",
+  "runtime": "https://cdn.jsdelivr.net/pyodide/v0.27.7/full/",
+  "engine_manifest": {
+    "version": 1,
+    "source_commit": "9f3348b4d09dfcaad64dfbe8a17f21465bb783bd",
+    "runtime": "https://cdn.jsdelivr.net/pyodide/v0.27.7/full/",
+    "files": [
+      {
+        "path": "domino_engine/__init__.py",
+        "sha256": "ee8ec193a0853e81ba9a73a8bd8a80fc18a03f38104b13ffa1661020f799ba4b"
+      },
+      {
+        "path": "domino_engine/tiles.py",
+        "sha256": "cebbd194fca86e5d88d87b58278514b1fda4e167dd2391ebea4fc125e759613d"
+      },
+      {
+        "path": "domino_engine/state.py",
+        "sha256": "dd3253f88f3b2f2e3494337a3787f36e7f3573975fb65fa0f04c16fa42ecc5b5"
+      },
+      {
+        "path": "domino_engine/rules.py",
+        "sha256": "ebdc8aa882964c45aa07360c0f3297645658dea41612d29d89a00dd2ca172729"
+      },
+      {
+        "path": "domino_engine/events.py",
+        "sha256": "0d672f5b9e156ed9c2ca8900a957fdebb59fb4796cad32ae51ce1a10846c03bb"
+      },
+      {
+        "path": "domino_engine/knowledge.py",
+        "sha256": "7f41a6bcde3fd8380fae1ad64b145420982fbdf229abdb63480874edcd2395b9"
+      },
+      {
+        "path": "domino_engine/strategy.py",
+        "sha256": "e70d154b3c01a245523f4eff95035f9ba91297fe5a2472079e4e607ecdfa6920"
+      },
+      {
+        "path": "domino_engine/simulation.py",
+        "sha256": "0b710dd758f5317954a55d2f6393deb529d0a955f0c044ca0ebb3ed91f30a9f0"
+      },
+      {
+        "path": "domino_engine/web_bridge.py",
+        "sha256": "496e72471bac7f60eeac6a81d86326120aae85c86ff4f008dbc930fd30789a74"
+      }
+    ]
+  },
+  "browser": "Chromium",
+  "browser_version": "154.0.8037.57",
+  "headless": true,
+  "playwright_version": "1.62.0",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "viewport": {
+    "width": 1440,
+    "height": 1100
+  },
+  "device_scale_factor": 1,
+  "tls_transport": "verified urllib trust store",
+  "tls_verification_disabled": false,
+  "screenshots_modified_after_capture": false,
+  "mocked_engine_or_state": false,
+  "dom_modified_for_capture": false,
+  "seed": 43,
+  "played_level": 3,
+  "human_input": "Automated real UI clicks: largest-pip visible legal move, not a human strength evaluation",
+  "cpu": "Unchanged delivered StrategyEngine in Pyodide Web Worker",
+  "level_options": [
+    {
+      "value": "1",
+      "text": "Livello 1"
+    },
+    {
+      "value": "2",
+      "text": "Livello 2"
+    },
+    {
+      "value": "3",
+      "text": "Livello 3"
+    },
+    {
+      "value": "4",
+      "text": "Livello 4"
+    },
+    {
+      "value": "5",
+      "text": "Livello 5"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "01-mano-iniziale.png",
+      "context": "Inizio reale: sette tessere proprie, sette CPU coperte, tavolo vuoto; consigli nascosti.",
+      "public_snapshot": "01-mano-iniziale.json",
+      "sha256": "9c2cdeb9071bc8111f1ce4f093805170c13cee69f16fe482f13546a687e4e32a",
+      "snapshot_sha256": "dc5dd687d9c03d8124ca41edef8c307b292e1f03ae02581d21abde14cc108560",
+      "seed": 43,
+      "level": 3,
+      "confirmed_events": 0,
+      "own_tiles": 7,
+      "opponent_tiles": 7,
+      "chain_tiles": 0,
+      "pending_proposal": null,
+      "ranking_rows": 0,
+      "terminal": false
+    },
+    {
+      "file": "04-livello-1.png",
+      "context": "Selettore originale della CPU impostato sul livello 1; stessa mano e zero eventi.",
+      "public_snapshot": "04-livello-1.json",
+      "sha256": "b5deb9a1b1cac0fd8781650819ddad650ef41ffc3341faaa0a12377bd2ba3492",
+      "snapshot_sha256": "eee05a06dd2100bd23ad2f2a49792b46b838adef819432e09b73dc58d9081c74",
+      "seed": 43,
+      "level": 1,
+      "confirmed_events": 0,
+      "own_tiles": 7,
+      "opponent_tiles": 7,
+      "chain_tiles": 0,
+      "pending_proposal": null,
+      "ranking_rows": 0,
+      "terminal": false
+    },
+    {
+      "file": "04-livello-2.png",
+      "context": "Selettore originale della CPU impostato sul livello 2; stessa mano e zero eventi.",
+      "public_snapshot": "04-livello-2.json",
+      "sha256": "5031983d1e3eb99aed9a5fac3b51267824020ca018963d495af8b6f6a1b44ae0",
+      "snapshot_sha256": "e7100edc260e78d6edfba1041f376eecf9f04e8de6b43cd5948648801ad12678",
+      "seed": 43,
+      "level": 2,
+      "confirmed_events": 0,
+      "own_tiles": 7,
+      "opponent_tiles": 7,
+      "chain_tiles": 0,
+      "pending_proposal": null,
+      "ranking_rows": 0,
+      "terminal": false
+    },
+    {
+      "file": "04-livello-3.png",
+      "context": "Selettore originale della CPU impostato sul livello 3; stessa mano e zero eventi.",
+      "public_snapshot": "04-livello-3.json",
+      "sha256": "9c2cdeb9071bc8111f1ce4f093805170c13cee69f16fe482f13546a687e4e32a",
+      "snapshot_sha256": "f4fc75c757fe628f8700e1271ce6987fcb8dcc99aa4dd83e2d248379f0fab104",
+      "seed": 43,
+      "level": 3,
+      "confirmed_events": 0,
+      "own_tiles": 7,
+      "opponent_tiles": 7,
+      "chain_tiles": 0,
+      "pending_proposal": null,
+      "ranking_rows": 0,
+      "terminal": false
+    },
+    {
+      "file": "04-livello-4.png",
+      "context": "Selettore originale della CPU impostato sul livello 4; stessa mano e zero eventi.",
+      "public_snapshot": "04-livello-4.json",
+      "sha256": "83158114e7b6001ea5836f907290dfa5a16f1e51690b46313266a9fb9f10c8ca",
+      "snapshot_sha256": "dba706146fc7739c9cff9f5225bbc91721549a4483e7a680df1162ff2a04d930",
+      "seed": 43,
+      "level": 4,
+      "confirmed_events": 0,
+      "own_tiles": 7,
+      "opponent_tiles": 7,
+      "chain_tiles": 0,
+      "pending_proposal": null,
+      "ranking_rows": 0,
+      "terminal": false
+    },
+    {
+      "file": "04-livello-5.png",
+      "context": "Selettore originale della CPU impostato sul livello 5; stessa mano e zero eventi.",
+      "public_snapshot": "04-livello-5.json",
+      "sha256": "ea9c1bc8fc66d220abe2105d2214f090962f2272d2d68e1ebadb05a20b93149e",
+      "snapshot_sha256": "9a7f7132f223bb5a65481a7f6332f66020fd80a1a83866628b6924205c1b5051",
+      "seed": 43,
+      "level": 5,
+      "confirmed_events": 0,
+      "own_tiles": 7,
+      "opponent_tiles": 7,
+      "chain_tiles": 0,
+      "pending_proposal": null,
+      "ranking_rows": 0,
+      "terminal": false
+    },
+    {
+      "file": "02-partita-in-corso.png",
+      "context": "Partita in corso: catena confermata, estremi, nostra mano e avversario con tessere coperte.",
+      "public_snapshot": "02-partita-in-corso.json",
+      "sha256": "c281cb897ab316118c3fa7a6d78900410a931d62b7d026b5d468266f37462134",
+      "snapshot_sha256": "684dda30d5f7b16cdd0908f9b467f90f43d5ec755fedc34b162fd9bc7702e91d",
+      "seed": 43,
+      "level": 3,
+      "confirmed_events": 2,
+      "own_tiles": 6,
+      "opponent_tiles": 6,
+      "chain_tiles": 2,
+      "pending_proposal": null,
+      "ranking_rows": 0,
+      "terminal": false
+    },
+    {
+      "file": "03-classifica-consiglio-ai.png",
+      "context": "Consigli attivati con il checkbox originale: tutte le mosse legali ordinate, utilità e spiegazioni; prima riga raccomandata.",
+      "public_snapshot": "03-classifica-consiglio-ai.json",
+      "sha256": "403885ebbe6edc74fcc298a3b5402a324fc6edd54ebfa60e93a0d02b6d4aa609",
+      "snapshot_sha256": "c62be07ccefdb4fda512f9171ad061bff75f2203909a1c06d58d613020faca61",
+      "seed": 43,
+      "level": 3,
+      "confirmed_events": 2,
+      "own_tiles": 6,
+      "opponent_tiles": 6,
+      "chain_tiles": 2,
+      "pending_proposal": null,
+      "ranking_rows": 2,
+      "terminal": false
+    },
+    {
+      "file": "05-fine-partita.png",
+      "context": "Esito effettivo della stessa partita, raggiunto confermando le mosse nell'interfaccia; nessun risultato imposto.",
+      "public_snapshot": "05-fine-partita.json",
+      "sha256": "fb30759887f9772604dde3699496fa70b301d7640a5fd543f449ea262f7d4bcc",
+      "snapshot_sha256": "d11d76d93d1d90bad710a0db21b576eba971132b5c82bb82864e5923d868c3bd",
+      "seed": 43,
+      "level": 3,
+      "confirmed_events": 14,
+      "own_tiles": 3,
+      "opponent_tiles": 1,
+      "chain_tiles": 10,
+      "pending_proposal": null,
+      "ranking_rows": 0,
+      "terminal": true
+    }
+  ],
+  "confirmed_actions": [
+    {
+      "action": "select_level",
+      "level": 1,
+      "confirmed_events": 0
+    },
+    {
+      "action": "select_level",
+      "level": 2,
+      "confirmed_events": 0
+    },
+    {
+      "action": "select_level",
+      "level": 3,
+      "confirmed_events": 0
+    },
+    {
+      "action": "select_level",
+      "level": 4,
+      "confirmed_events": 0
+    },
+    {
+      "action": "select_level",
+      "level": 5,
+      "confirmed_events": 0
+    },
+    {
+      "action": "select_pose_direction",
+      "button": "Posa verso il basso",
+      "before_event": 0
+    },
+    {
+      "action": "confirm",
+      "proposal": {
+        "id": "move-1",
+        "player": "ASSISTED",
+        "move": {
+          "tile": [
+            6,
+            6
+          ],
+          "side": "RIGHT",
+          "orientation": [
+            6,
+            6
+          ]
+        },
+        "legal": true,
+        "error": null,
+        "new_ends": [
+          6,
+          6
+        ],
+        "source": "observation"
+      },
+      "before_event": 0
+    },
+    {
+      "action": "select_pose_direction",
+      "button": "Posa verso l’alto",
+      "before_event": 1
+    },
+    {
+      "action": "confirm",
+      "proposal": {
+        "id": "move-2",
+        "player": "OPPONENT",
+        "move": {
+          "tile": [
+            2,
+            6
+          ],
+          "side": "LEFT",
+          "orientation": [
+            2,
+            6
+          ]
+        },
+        "legal": true,
+        "error": null,
+        "new_ends": [
+          2,
+          6
+        ],
+        "source": "observation"
+      },
+      "before_event": 1
+    },
+    {
+      "action": "select_pose_direction",
+      "button": "Posa verso il basso",
+      "before_event": 2
+    },
+    {
+      "action": "confirm",
+      "proposal": {
+        "id": "move-3",
+        "player": "ASSISTED",
+        "move": {
+          "tile": [
+            3,
+            6
+          ],
+          "side": "RIGHT",
+          "orientation": [
+            6,
+            3
+          ]
+        },
+        "legal": true,
+        "error": null,
+        "new_ends": [
+          2,
+          3
+        ],
+        "source": "observation"
+      },
+      "before_event": 2
+    },
+    {
+      "action": "select_pose_direction",
+      "button": "Posa verso il basso",
+      "before_event": 3
+    },
+    {
+      "action": "confirm",
+      "proposal": {
+        "id": "move-4",
+        "player": "OPPONENT",
+        "move": {
+          "tile": [
+            3,
+            4
+          ],
+          "side": "RIGHT",
+          "orientation": [
+            3,
+            4
+          ]
+        },
+        "legal": true,
+        "error": null,
+        "new_ends": [
+          2,
+          4
+        ],
+        "source": "observation"
+      },
+      "before_event": 3
+    },
+    {
+      "action": "confirm",
+      "proposal": {
+        "id": "move-5",
+        "player": "ASSISTED",
+        "move": {
+          "tile": [
+            4,
+            5
+          ],
+          "side": "RIGHT",
+          "orientation": [
+            4,
+            5
+          ]
+        },
+        "legal": true,
+        "error": null,
+        "new_ends": [
+          2,
+          5
+        ],
+        "source": "observation"
+      },
+      "before_event": 4
+    },
+    {
+      "action": "select_pose_direction",
+      "button": "Posa verso l’alto",
+      "before_event": 5
+    },
+    {
+      "action": "confirm",
+      "proposal": {
+        "id": "move-6",
+        "player": "OPPONENT",
+        "move": {
+          "tile": [
+            0,
+            5
+          ],
+          "side": "RIGHT",
+          "orientation": [
+            5,
+            0
+          ]
+        },
+        "legal": true,
+        "error": null,
+        "new_ends": [
+          2,
+          0
+        ],
+        "source": "observation"
+      },
+      "before_event": 5
+    },
+    {
+      "action": "confirm",
+      "proposal": {
+        "id": "move-7",
+        "player": "ASSISTED",
+        "move": {
+          "pass": true
+        },
+        "legal": true,
+        "error": null,
+        "new_ends": [
+          2,
+          0
+        ],
+        "source": "browser-pass"
+      },
+      "before_event": 6
+    },
+    {
+      "action": "confirm",
+      "proposal": {
+        "id": "move-8",
+        "player": "OPPONENT",
+        "move": {
+          "tile": [
+            0,
+            2
+          ],
+          "side": "LEFT",
+          "orientation": [
+            0,
+            2
+          ]
+        },
+        "legal": true,
+        "error": null,
+        "new_ends": [
+          0,
+          0
+        ],
+        "source": "observation"
+      },
+      "before_event": 7
+    },
+    {
+      "action": "confirm",
+      "proposal": {
+        "id": "move-9",
+        "player": "ASSISTED",
+        "move": {
+          "pass": true
+        },
+        "legal": true,
+        "error": null,
+        "new_ends": [
+          0,
+          0
+        ],
+        "source": "browser-pass"
+      },
+      "before_event": 8
+    },
+    {
+      "action": "select_pose_direction",
+      "button": "Posa verso l’alto",
+      "before_event": 9
+    },
+    {
+      "action": "confirm",
+      "proposal": {
+        "id": "move-10",
+        "player": "OPPONENT",
+        "move": {
+          "tile": [
+            0,
+            6
+          ],
+          "side": "RIGHT",
+          "orientation": [
+            0,
+            6
+          ]
+        },
+        "legal": true,
+        "error": null,
+        "new_ends": [
+          0,
+          6
+        ],
+        "source": "observation"
+      },
+      "before_event": 9
+    },
+    {
+      "action": "confirm",
+      "proposal": {
+        "id": "move-11",
+        "player": "ASSISTED",
+        "move": {
+          "tile": [
+            1,
+            6
+          ],
+          "side": "RIGHT",
+          "orientation": [
+            6,
+            1
+          ]
+        },
+        "legal": true,
+        "error": null,
+        "new_ends": [
+          0,
+          1
+        ],
+        "source": "observation"
+      },
+      "before_event": 10
+    },
+    {
+      "action": "select_pose_direction",
+      "button": "Posa verso il basso",
+      "before_event": 11
+    },
+    {
+      "action": "confirm",
+      "proposal": {
+        "id": "move-12",
+        "player": "OPPONENT",
+        "move": {
+          "tile": [
+            1,
+            2
+          ],
+          "side": "RIGHT",
+          "orientation": [
+            1,
+            2
+          ]
+        },
+        "legal": true,
+        "error": null,
+        "new_ends": [
+          0,
+          2
+        ],
+        "source": "observation"
+      },
+      "before_event": 11
+    },
+    {
+      "action": "confirm",
+      "proposal": {
+        "id": "move-13",
+        "player": "ASSISTED",
+        "move": {
+          "pass": true
+        },
+        "legal": true,
+        "error": null,
+        "new_ends": [
+          0,
+          2
+        ],
+        "source": "browser-pass"
+      },
+      "before_event": 12
+    },
+    {
+      "action": "confirm",
+      "proposal": {
+        "id": "move-14",
+        "player": "OPPONENT",
+        "move": {
+          "pass": true
+        },
+        "legal": true,
+        "error": null,
+        "new_ends": [
+          0,
+          2
+        ],
+        "source": "browser-pass"
+      },
+      "before_event": 13
+    }
+  ],
+  "final_public_view": {
+    "view": {
+      "observer": "ASSISTED",
+      "hand": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "chain": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "turn": "ASSISTED",
+      "opponent_count": 1,
+      "passes": 2,
+      "history": [
+        {
+          "player": "ASSISTED",
+          "move": {
+            "tile": [
+              6,
+              6
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              6,
+              6
+            ]
+          },
+          "ends_before": null
+        },
+        {
+          "player": "OPPONENT",
+          "move": {
+            "tile": [
+              2,
+              6
+            ],
+            "side": "LEFT",
+            "orientation": [
+              2,
+              6
+            ]
+          },
+          "ends_before": [
+            6,
+            6
+          ]
+        },
+        {
+          "player": "ASSISTED",
+          "move": {
+            "tile": [
+              3,
+              6
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              6,
+              3
+            ]
+          },
+          "ends_before": [
+            2,
+            6
+          ]
+        },
+        {
+          "player": "OPPONENT",
+          "move": {
+            "tile": [
+              3,
+              4
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              3,
+              4
+            ]
+          },
+          "ends_before": [
+            2,
+            3
+          ]
+        },
+        {
+          "player": "ASSISTED",
+          "move": {
+            "tile": [
+              4,
+              5
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              4,
+              5
+            ]
+          },
+          "ends_before": [
+            2,
+            4
+          ]
+        },
+        {
+          "player": "OPPONENT",
+          "move": {
+            "tile": [
+              0,
+              5
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              5,
+              0
+            ]
+          },
+          "ends_before": [
+            2,
+            5
+          ]
+        },
+        {
+          "player": "ASSISTED",
+          "move": {
+            "pass": true
+          },
+          "ends_before": [
+            2,
+            0
+          ]
+        },
+        {
+          "player": "OPPONENT",
+          "move": {
+            "tile": [
+              0,
+              2
+            ],
+            "side": "LEFT",
+            "orientation": [
+              0,
+              2
+            ]
+          },
+          "ends_before": [
+            2,
+            0
+          ]
+        },
+        {
+          "player": "ASSISTED",
+          "move": {
+            "pass": true
+          },
+          "ends_before": [
+            0,
+            0
+          ]
+        },
+        {
+          "player": "OPPONENT",
+          "move": {
+            "tile": [
+              0,
+              6
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              0,
+              6
+            ]
+          },
+          "ends_before": [
+            0,
+            0
+          ]
+        },
+        {
+          "player": "ASSISTED",
+          "move": {
+            "tile": [
+              1,
+              6
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              6,
+              1
+            ]
+          },
+          "ends_before": [
+            0,
+            6
+          ]
+        },
+        {
+          "player": "OPPONENT",
+          "move": {
+            "tile": [
+              1,
+              2
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              1,
+              2
+            ]
+          },
+          "ends_before": [
+            0,
+            1
+          ]
+        },
+        {
+          "player": "ASSISTED",
+          "move": {
+            "pass": true
+          },
+          "ends_before": [
+            0,
+            2
+          ]
+        },
+        {
+          "player": "OPPONENT",
+          "move": {
+            "pass": true
+          },
+          "ends_before": [
+            0,
+            2
+          ]
+        }
+      ],
+      "terminal": true,
+      "winner": "OPPONENT",
+      "reason": "blocked",
+      "rules": "double-six;7-per-player;14-excluded;no-draw;two-passes-block"
+    },
+    "ends": [
+      0,
+      2
+    ],
+    "legal_moves": [],
+    "pending": null,
+    "token": "7:14",
+    "level": 3,
+    "result": {
+      "winner": "OPPONENT",
+      "reason": "blocked",
+      "your_points": 16,
+      "cpu_points": 5
+    },
+    "event_count": 14,
+    "ranking": [],
+    "advice_diagnostics": null,
+    "cpu_diagnostics": {
+      "requested_depth": 3,
+      "completed_depth": 3,
+      "deepest_visited": 1,
+      "nodes": 16,
+      "samples": 8,
+      "elapsed_ms": 3.0999999999998806,
+      "budget_exhausted": false,
+      "limit": null
+    }
+  },
+  "cpu_decisions": [
+    {
+      "requested_depth": 3,
+      "completed_depth": 3,
+      "deepest_visited": 3,
+      "nodes": 230,
+      "samples": 8,
+      "elapsed_ms": 33.7999989999993,
+      "budget_exhausted": false,
+      "limit": null
+    },
+    {
+      "requested_depth": 3,
+      "completed_depth": 3,
+      "deepest_visited": 3,
+      "nodes": 163,
+      "samples": 8,
+      "elapsed_ms": 26.000000000001577,
+      "budget_exhausted": false,
+      "limit": null
+    },
+    {
+      "requested_depth": 3,
+      "completed_depth": 3,
+      "deepest_visited": 3,
+      "nodes": 165,
+      "samples": 8,
+      "elapsed_ms": 22.999999999999687,
+      "budget_exhausted": false,
+      "limit": null
+    },
+    {
+      "requested_depth": 3,
+      "completed_depth": 3,
+      "deepest_visited": 3,
+      "nodes": 199,
+      "samples": 8,
+      "elapsed_ms": 27.599999999999625,
+      "budget_exhausted": false,
+      "limit": null
+    },
+    {
+      "requested_depth": 3,
+      "completed_depth": 3,
+      "deepest_visited": 3,
+      "nodes": 82,
+      "samples": 8,
+      "elapsed_ms": 11.300001000000393,
+      "budget_exhausted": false,
+      "limit": null
+    },
+    {
+      "requested_depth": 3,
+      "completed_depth": 3,
+      "deepest_visited": 3,
+      "nodes": 80,
+      "samples": 8,
+      "elapsed_ms": 10.500000000000398,
+      "budget_exhausted": false,
+      "limit": null
+    },
+    {
+      "requested_depth": 3,
+      "completed_depth": 3,
+      "deepest_visited": 1,
+      "nodes": 16,
+      "samples": 8,
+      "elapsed_ms": 3.0999999999998806,
+      "budget_exhausted": false,
+      "limit": null
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "physical_camera_integration": "NOT_RUN; not implemented in this cloud handoff",
+  "new_strategy_tournament": "NOT_RUN"
+}

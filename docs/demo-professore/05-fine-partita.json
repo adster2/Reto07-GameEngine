@@ -1,0 +1,322 @@
+{
+  "context": "Esito effettivo della stessa partita, raggiunto confermando le mosse nell'interfaccia; nessun risultato imposto.",
+  "seed": 43,
+  "captured_at_utc": "2026-11-06T11:48:03.055615+00:00",
+  "state": {
+    "view": {
+      "observer": "ASSISTED",
+      "hand": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "chain": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "turn": "ASSISTED",
+      "opponent_count": 1,
+      "passes": 2,
+      "history": [
+        {
+          "player": "ASSISTED",
+          "move": {
+            "tile": [
+              6,
+              6
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              6,
+              6
+            ]
+          },
+          "ends_before": null
+        },
+        {
+          "player": "OPPONENT",
+          "move": {
+            "tile": [
+              2,
+              6
+            ],
+            "side": "LEFT",
+            "orientation": [
+              2,
+              6
+            ]
+          },
+          "ends_before": [
+            6,
+            6
+          ]
+        },
+        {
+          "player": "ASSISTED",
+          "move": {
+            "tile": [
+              3,
+              6
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              6,
+              3
+            ]
+          },
+          "ends_before": [
+            2,
+            6
+          ]
+        },
+        {
+          "player": "OPPONENT",
+          "move": {
+            "tile": [
+              3,
+              4
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              3,
+              4
+            ]
+          },
+          "ends_before": [
+            2,
+            3
+          ]
+        },
+        {
+          "player": "ASSISTED",
+          "move": {
+            "tile": [
+              4,
+              5
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              4,
+              5
+            ]
+          },
+          "ends_before": [
+            2,
+            4
+          ]
+        },
+        {
+          "player": "OPPONENT",
+          "move": {
+            "tile": [
+              0,
+              5
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              5,
+              0
+            ]
+          },
+          "ends_before": [
+            2,
+            5
+          ]
+        },
+        {
+          "player": "ASSISTED",
+          "move": {
+            "pass": true
+          },
+          "ends_before": [
+            2,
+            0
+          ]
+        },
+        {
+          "player": "OPPONENT",
+          "move": {
+            "tile": [
+              0,
+              2
+            ],
+            "side": "LEFT",
+            "orientation": [
+              0,
+              2
+            ]
+          },
+          "ends_before": [
+            2,
+            0
+          ]
+        },
+        {
+          "player": "ASSISTED",
+          "move": {
+            "pass": true
+          },
+          "ends_before": [
+            0,
+            0
+          ]
+        },
+        {
+          "player": "OPPONENT",
+          "move": {
+            "tile": [
+              0,
+              6
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              0,
+              6
+            ]
+          },
+          "ends_before": [
+            0,
+            0
+          ]
+        },
+        {
+          "player": "ASSISTED",
+          "move": {
+            "tile": [
+              1,
+              6
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              6,
+              1
+            ]
+          },
+          "ends_before": [
+            0,
+            6
+          ]
+        },
+        {
+          "player": "OPPONENT",
+          "move": {
+            "tile": [
+              1,
+              2
+            ],
+            "side": "RIGHT",
+            "orientation": [
+              1,
+              2
+            ]
+          },
+          "ends_before": [
+            0,
+            1
+          ]
+        },
+        {
+          "player": "ASSISTED",
+          "move": {
+            "pass": true
+          },
+          "ends_before": [
+            0,
+            2
+          ]
+        },
+        {
+          "player": "OPPONENT",
+          "move": {
+            "pass": true
+          },
+          "ends_before": [
+            0,
+            2
+          ]
+        }
+      ],
+      "terminal": true,
+      "winner": "OPPONENT",
+      "reason": "blocked",
+      "rules": "double-six;7-per-player;14-excluded;no-draw;two-passes-block"
+    },
+    "ends": [
+      0,
+      2
+    ],
+    "legal_moves": [],
+    "pending": null,
+    "token": "7:14",
+    "level": 3,
+    "result": {
+      "winner": "OPPONENT",
+      "reason": "blocked",
+      "your_points": 16,
+      "cpu_points": 5
+    },
+    "event_count": 14,
+    "ranking": [],
+    "advice_diagnostics": null,
+    "cpu_diagnostics": {
+      "requested_depth": 3,
+      "completed_depth": 3,
+      "deepest_visited": 1,
+      "nodes": 16,
+      "samples": 8,
+      "elapsed_ms": 3.0999999999998806,
+      "budget_exhausted": false,
+      "limit": null
+    }
+  },
+  "selected_level": "3",
+  "advice_visible": false,
+  "result_text": "MANCHE CONCLUSA\n\nQuesta volta vince la CPU.\n\nLa partita si è bloccata dopo due passaggi. Punti rimasti: tu 16, CPU 5.\n\nGiochiamo ancora"
+}

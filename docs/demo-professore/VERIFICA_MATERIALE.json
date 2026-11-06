@@ -1,0 +1,148 @@
+{
+  "verified_at_utc": "2026-11-06T11:51:11.917450+00:00",
+  "status": "PASS",
+  "fresh_checks": {
+    "capture_command": "python docs/demo-professore/capture_demo.py --environment-tls",
+    "capture_exit_code": 0,
+    "completed_browser_games": 1,
+    "confirmed_events": 14,
+    "browser_page_errors": [],
+    "browser_console_errors": [],
+    "existing_bridge_tests": {
+      "command": "python -m unittest tests.test_web_bridge -v",
+      "exit_code": 0,
+      "tests": 8,
+      "passed": 8,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "runner_seconds": 1.237
+    },
+    "engine_handoff_check": {
+      "command": "python -m handoff.check_engine",
+      "exit_code": 0,
+      "source_modules_verified": 15
+    },
+    "approved_files_unchanged": 133,
+    "screenshot_and_snapshot_hashes": "PASS",
+    "capture_script_hash": "PASS",
+    "screenshots": [
+      {
+        "file": "01-mano-iniziale.png",
+        "sha256_verified": true,
+        "png_decodes": true,
+        "width": 1440,
+        "height": 1625
+      },
+      {
+        "file": "04-livello-1.png",
+        "sha256_verified": true,
+        "png_decodes": true,
+        "width": 1440,
+        "height": 1625
+      },
+      {
+        "file": "04-livello-2.png",
+        "sha256_verified": true,
+        "png_decodes": true,
+        "width": 1440,
+        "height": 1625
+      },
+      {
+        "file": "04-livello-3.png",
+        "sha256_verified": true,
+        "png_decodes": true,
+        "width": 1440,
+        "height": 1625
+      },
+      {
+        "file": "04-livello-4.png",
+        "sha256_verified": true,
+        "png_decodes": true,
+        "width": 1440,
+        "height": 1625
+      },
+      {
+        "file": "04-livello-5.png",
+        "sha256_verified": true,
+        "png_decodes": true,
+        "width": 1440,
+        "height": 1625
+      },
+      {
+        "file": "02-partita-in-corso.png",
+        "sha256_verified": true,
+        "png_decodes": true,
+        "width": 1440,
+        "height": 1625
+      },
+      {
+        "file": "03-classifica-consiglio-ai.png",
+        "sha256_verified": true,
+        "png_decodes": true,
+        "width": 1440,
+        "height": 1867
+      },
+      {
+        "file": "05-fine-partita.png",
+        "sha256_verified": true,
+        "png_decodes": true,
+        "width": 1440,
+        "height": 1869
+      }
+    ],
+    "local_document_links": "PASS"
+  },
+  "historical_results_read_only_check": {
+    "description": "Counts and scores recomputed from the committed historical CSVs; historical tournaments and benchmarks NOT rerun for this demo",
+    "campaigns": [
+      {
+        "source": "docs/results/STRESS_RESULTS.csv",
+        "sha256": "66bfcde56641c5da5f0e479ba4e441afc5322f425efdbff915120ad1ce600714",
+        "games": 1000,
+        "plies": 13126,
+        "rule_violations": 0
+      },
+      {
+        "source": "docs/results/TOURNAMENT_RESULTS.csv",
+        "sha256": "4dec538496b6382b778a114ae2326377e544dd672d86d357e1c4703c43f97385",
+        "games": 4000,
+        "plies": 52662,
+        "rule_violations": 0
+      },
+      {
+        "source": "docs/web-results/WEB_STRESS.csv",
+        "sha256": "8af096b6c3ea6ab1ec05538fbeb265340ff2a32565b895f52f4009f2bddf5572",
+        "games": 1000,
+        "plies": 12966,
+        "rule_violations": 0
+      }
+    ],
+    "total_games": 6000,
+    "total_plies": 78754,
+    "rule_violations": 0,
+    "level_2_score_rates": [
+      {
+        "level": 2,
+        "opponent": "random",
+        "games": 400,
+        "independent_deals": 100,
+        "score_rate": 0.675
+      },
+      {
+        "level": 2,
+        "opponent": "greedy",
+        "games": 400,
+        "independent_deals": 100,
+        "score_rate": 0.595
+      }
+    ],
+    "replay_audits_rerun_now": false,
+    "historical_full_suite_rerun_now": false,
+    "benchmark_rerun_now": false
+  },
+  "physical_opencv_integration": "NOT_RUN",
+  "windows_gui": "NOT_RUN",
+  "public_site_verified_now": "NOT_RUN",
+  "new_strategy_tournament": "NOT_RUN"
+}
